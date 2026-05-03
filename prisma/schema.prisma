@@ -1,0 +1,81 @@
+// Prisma schema for SIYBT 2027 — Postgres on Supabase
+// Run:
+//   npx prisma generate          (after schema changes)
+//   npx prisma migrate dev       (local development)
+//   npx prisma migrate deploy    (Vercel build hook in production)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Registration {
+  id                 String   @id @default(cuid())
+  createdAt          DateTime @default(now())
+  clubName           String
+  city               String
+  country            String
+  contact            String
+  email              String
+  phone              String
+  categories         String[]
+  needsAccommodation Boolean  @default(false)
+  rooms              Int?
+  nights             Int?
+  notes              String?
+  status             String   @default("pending") // pending | confirmed | rejected
+  emailSent          Boolean  @default(false)
+
+  @@index([createdAt])
+  @@index([status])
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  name      String
+  email     String
+  subject   String
+  message   String
+  read      Boolean  @default(false)
+
+  @@index([createdAt])
+  @@index([read])
+}
+
+model FamilyBooking {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  fullName  String
+  email     String
+  phone     String
+  club      String?
+  arrival   DateTime?
+  departure DateTime?
+  adults    Int       @default(1)
+  children  Int       @default(0)
+  skiAddon  Boolean   @default(false)
+  notes     String?
+  status    String    @default("pending")
+
+  @@index([createdAt])
+}
+
+model PressAccreditation {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  fullName  String
+  outlet    String
+  email     String
+  phone     String
+  notes     String?
+  status    String   @default("pending")
+
+  @@index([createdAt])
+}
+

@@ -1,0 +1,334 @@
+{
+  "meta": {
+    "title": "SIYBT 2027 — Sarajevo International Youth Basketball Tournament",
+    "description": "28–31. januar 2027. Sarajevo postaje epicentar omladinske košarke. 70 ekipa, 8 kategorija, 16 zemalja, 6 dvorana."
+  },
+  "nav": {
+    "tournament": "Turnir",
+    "schedule": "Raspored",
+    "venues": "Dvorane",
+    "teams": "Ekipe",
+    "family": "Family",
+    "sponsors": "Sponzori",
+    "media": "Medija",
+    "contact": "Kontakt",
+    "register": "Prijavi klub",
+    "menu": "Meni"
+  },
+  "common": {
+    "scroll": "Skrolaj",
+    "viewAll": "Pogledaj sve dvorane",
+    "learnMore": "Saznaj više",
+    "viewSchedule": "Pogledaj raspored",
+    "becomePartner": "Postani partner",
+    "downloadDeck": "Preuzmi partner deck",
+    "bookFamily": "Rezerviši Family paket"
+  },
+  "countdown": {
+    "days": "DANI",
+    "hours": "SATI",
+    "minutes": "MIN",
+    "seconds": "SEK"
+  },
+  "hero": {
+    "eyebrow": "28 — 31 JANUAR 2027 · SARAJEVO",
+    "line1": "SARAJEVO INTERNATIONAL",
+    "line2": "YOUTH BASKETBALL",
+    "tagline": "GDJE SE BALKANSKA KOŠARKA SUSREĆE SA SVIJETOM.",
+    "subheadline": "Gdje se balkanska košarka susreće sa svijetom. 70 ekipa. 8 kategorija. 16 zemalja. 4 dana u Sarajevu.",
+    "ctaPrimary": "Prijavi klub",
+    "ctaGhost": "Pogledaj raspored"
+  },
+  "marquee": {
+    "items": ["U12", "U14", "U16", "U18", "DJEČACI", "DJEVOJČICE", "6 DVORANA", "70 EKIPA", "16 ZEMALJA", "SARAJEVO 2027"]
+  },
+  "about": {
+    "eyebrow": "O turniru",
+    "title": "Kontinentalni razmjer. Sarajevska preciznost.",
+    "p1": "Sarajevo International Youth Basketball Tournament okuplja najjače omladinske programe iz BiH dijaspore, regije i šire Evrope kroz četiri dana takmičenja u šest vrhunskih sarajevskih dvorana.",
+    "p2": "Misija je stvoriti susretište gdje mladi sportisti prvi put upoznaju Sarajevo, a Sarajevo prima najtalentovaniju omladinsku košarkašku generaciju Balkana.",
+    "p3": "Iza turnira stoji organizacijski odbor sa decenijama zajedničkog iskustva u sportu, košarkaškoj operativi i produkciji eventova velikog formata."
+  },
+  "stats": {
+    "teams": "Ekipa",
+    "athletes": "Mladih sportista",
+    "countries": "Zemalja",
+    "venues": "Dvorana"
+  },
+  "bento": {
+    "eyebrow": "Šta nudimo",
+    "title": "Standard ozbiljnog turnira.",
+    "items": {
+      "venues": { "title": "Vrhunske dvorane", "body": "Šest certificiranih dvorana u Sarajevu, sa Hotel Hills Arenom kao centralnom." },
+      "stream": { "title": "Live stream", "body": "Svaki teren u HD prijenosu. Porodica kod kuće ne propušta nijednu četvrtinu." },
+      "tv": { "title": "TV produkcija", "body": "Multi-kamera produkcija za finala, sa highlight materijalima spremnim za broadcast." },
+      "hotel": { "title": "Hotelski paket", "body": "Pažljivo odabran smještaj sa shuttle prijevozom do svih dvorana." },
+      "family": { "title": "Family doživljaj", "body": "Paket za roditelje sa ulazom u dvorane, hotelskom cijenom i gradskim programom." },
+      "sponsors": { "title": "Partneri prvog reda", "body": "BH Telecom i drugi lideri kategorija stoje iza SIYBT-a." }
+    }
+  },
+  "categories": {
+    "eyebrow": "Osam takmičenja",
+    "title": "Osam kategorija. Jedna nedjelja u dvorani.",
+    "drag": "Povuci · Skrolaj"
+  },
+  "venuesSection": {
+    "eyebrow": "Šest dvorana. Jedan grad.",
+    "title": "Sarajevo, teren po teren.",
+    "subtitle": "Od Ilidže do centra — svaka utakmica unutar 20 minuta vožnje."
+  },
+  "globe": {
+    "eyebrow": "Šesnaest zemalja na parketu",
+    "title": "Od Stockholma do Skoplja.",
+    "subtitle": "Programi putuju iz cijele Evrope da podijele četiri dana košarke u Sarajevu."
+  },
+  "sponsorsSection": {
+    "eyebrow": "Sa turnirom",
+    "title": "Postanite partner SIYBT-a.",
+    "pitch": "Postanite partner turnira. BH Telecom i drugi vodeći brendovi stoje iza SIYBT-a."
+  },
+  "ctaBlock": {
+    "eyebrow": "Prijave su otvorene",
+    "title": "Sedamdeset ekipa. Ni jedna više.",
+    "body": "Kapacitet je fiksan. Prijave klubova zatvaraju se 30. novembra 2026.",
+    "cta": "Prijavi klub"
+  },
+  "tournament": {
+    "title": "Turnir",
+    "lead": "Četiri dana košarke, osam kategorija, šest dvorana širom Sarajeva.",
+    "dates": "28 — 31. januar 2027",
+    "countdownLabel": "Tip-off za",
+    "categoriesEyebrow": "Kategorije",
+    "categoriesTitle": "Osam kategorija na parketu.",
+    "categoriesLead": "Dječaci i djevojčice, U12 do U18 — osam paralelnih takmičenja kroz četiri dana, sa finalima u nedjelju.",
+    "fees": "Kotizacije",
+    "feesTitle": "Transparentne cijene za klubove.",
+    "feesClub": "Kotizacija kluba — po prijavljenoj ekipi",
+    "feesAthlete": "Kotizacija djeteta — po djetetu",
+    "format": "Format",
+    "formatTitle": "Od grupne faze do finala.",
+    "formatBody": "Grupna faza četvrtak i petak. Ukrštena eliminacija subota. Finala u nedjelju sa broadcast produkcijom. Sve utakmice 4×8 minuta za U12/U14 i 4×10 minuta za U16/U18.",
+    "formatDays": {
+      "thu": { "day": "Četvrtak", "label": "Grupna faza" },
+      "fri": { "day": "Petak", "label": "Grupna faza" },
+      "sat": { "day": "Subota", "label": "Eliminacije" },
+      "sun": { "day": "Nedjelja", "label": "Finala" }
+    },
+    "rules": "Pravilnik",
+    "rulesTitle": "FIBA pravila za mlađe kategorije.",
+    "rulesBody": "FIBA pravila za mlađe kategorije sa modificiranim trajanjem utakmice po kategoriji. Cijeli pravilnik dostavlja se klubovima nakon potvrde — uključujući podobnost, suđenje, ponašanje i tie-break proceduru.",
+    "faq": {
+      "eyebrow": "FAQ",
+      "q1": "Kako se provjeravaju podobnost i godište?",
+      "a1": "Svaki sportista mora imati važeći pasoš i aktuelnu klubsku registraciju. Dokumenti se provjeravaju na akreditaciji dan prije prve utakmice.",
+      "q2": "Da li je putno osiguranje obavezno?",
+      "a2": "Da. Svaki klub je odgovoran za putno i medicinsko osiguranje svoje delegacije. SIYBT obezbjeđuje medicinsko osoblje u dvoranama tokom utakmica.",
+      "q3": "Mogu li klubovi dovesti više od jedne ekipe po kategoriji?",
+      "a3": "Do dvije ekipe po kategoriji, zavisno od kapaciteta. Zahtjevi za više ekipa rješavaju se po redoslijedu nakon zatvaranja prijava.",
+      "q4": "Kakva je politika povrata?",
+      "a4": "Pun povrat do 30. novembra 2026. Nakon tog datuma, kotizacije nisu povratne, ali se mjesto može prenijeti drugom klubu sa liste čekanja."
+    },
+    "ctaTitle": "Rezerviši mjesto",
+    "ctaBody": "Prijave se zatvaraju 30. novembra 2026. ili kada bude potvrđeno 70 ekipa."
+  },
+  "teams": {
+    "title": "Ekipe",
+    "lead": "Live brojač potvrđenih klubova po kategorijama i zemljama.",
+    "confirmed": "Potvrđeno",
+    "of": "od",
+    "search": "Pretraži klubove ili gradove",
+    "filterCategory": "Kategorija",
+    "filterCountry": "Zemlja",
+    "all": "Sve",
+    "empty": "Nema ekipa za ove filtere.",
+    "submit": "Prijavi svoj klub"
+  },
+  "schedule": {
+    "title": "Raspored",
+    "lead": "Filtriraj po danu, kategoriji i dvorani. Live utakmice su istaknute.",
+    "live": "Uživo",
+    "tip": "Sva vremena u sarajevskoj zoni.",
+    "filterCategory": "Kategorija",
+    "filterVenue": "Dvorana",
+    "all": "Sve",
+    "empty": "Nema utakmica za ovaj presjek.",
+    "download": "PDF raspored"
+  },
+  "venuesPage": {
+    "title": "Dvorane",
+    "lead": "Šest certificiranih dvorana u Sarajevu. Svaka utakmica unutar 20 minuta vožnje.",
+    "capacity": "Kapacitet",
+    "primary": "Centralna dvorana",
+    "address": "Adresa",
+    "parking": "Parking",
+    "parkingValue": "Na lokaciji za delegacije",
+    "transit": "Prevoz",
+    "transitValue": "Tramvaj + autobus",
+    "mapNote": "Sarajevo · 6 dvorana · 20 minuta radius"
+  },
+  "family": {
+    "title": "Family paket",
+    "lead": "Napravljen za roditelje. Hotelska noć, ulaz u dvoranu i gradski program — sve u jednom paketu.",
+    "price": "100 KM / noć po roditelju",
+    "imageAlt": "Snježno Sarajevo s planinama",
+    "imageCaption": "Kraj januara u Sarajevu",
+    "imageHeadline": "Hladan grad. Tople dvorane.",
+    "includes": "Šta uključuje",
+    "includesTitle": "Sve što roditelju treba.",
+    "includesBody": "Sa hotelima, prijevoznicima i dvoranama smo pripremili jedan paket koji uklanja logistiku iz porodičnog vikenda u Sarajevu.",
+    "list": [
+      "Hotelska noć sa doručkom u partner hotelu",
+      "Dnevni shuttle do svih šest dvorana",
+      "Rezervisana sjedišta za porodice u dvoranama",
+      "Gradski program u subotu navečer",
+      "Welcome kit po dolasku"
+    ],
+    "rooms": {
+      "single": { "tag": "Jednokrevetna", "title": "Jedan roditelj", "body": "Jedan roditelj, jedan krevet, jedan doručak. Najjednostavniji boravak." },
+      "double": { "tag": "Dvokrevetna", "title": "Dva roditelja", "body": "Dva roditelja u sobi sa twin ili queen krevetom." },
+      "ski": { "tag": "Dodatak", "title": "Jahorina day-trip", "body": "Subotnji izlet na Jahorinu ili Bjelašnicu sa skijanjem ili sankanjem." }
+    },
+    "book": {
+      "eyebrow": "Rezervacija",
+      "title": "Rezerviši u jednoj formi.",
+      "body": "Pošalji datume i broj osoba. Tim odgovara potvrdom i instrukcijama za uplatu unutar 48 sati.",
+      "fields": {
+        "fullName": "Ime i prezime",
+        "email": "Email",
+        "phone": "Telefon",
+        "club": "Klub djeteta",
+        "arrival": "Datum dolaska",
+        "departure": "Datum odlaska",
+        "adults": "Odrasli",
+        "children": "Djeca"
+      },
+      "skiAddon": "Dodaj Jahorina day-trip",
+      "submit": "Pošalji zahtjev"
+    },
+    "cta": "Pošalji upit"
+  },
+  "sponsors": {
+    "title": "Sponzori",
+    "lead": "Partner tier-i, benefiti i deck za preuzimanje.",
+    "countMeta": "3 TIER-A · 12 SLOT-OVA",
+    "tiers": { "gold": "Zlatni tier", "silver": "Srebrni tier", "bronze": "Bronzani tier" },
+    "tierTitles": {
+      "gold": "Title partner",
+      "silver": "Tournament partner",
+      "bronze": "Court partner"
+    },
+    "tierBodies": {
+      "gold": "Title status u svim dvoranama, puna prisutnost u broadcastu, imenovani centralni teren u Hotel Hills Areni, brand integracija u svečanostima otvaranja i zatvaranja, premium hospitality.",
+      "silver": "LED rotacija na terenu, brendirane zone u dvije dvorane, broadcast inserti, hospitality za starije partnere i prostor za on-site aktivaciju.",
+      "bronze": "Court-side signalizacija u jednoj dvorani, partner pomen u broadcast grafikama, partner badge na digitalnim kanalima i ulaznice."
+    },
+    "perEdition": "izdanje",
+    "whyEyebrow": "Zašto partner",
+    "whyTitle": "Turnir s pravom publikom.",
+    "whyBody": "Četiri dana, šest dvorana, osam kategorija. Turnir doseže porodice širom Bosne, regije i dijaspore — i u dvoranama i kroz multi-court live stream.",
+    "benefits": {
+      "reach": { "title": "Doseg", "body": "840 sportista, porodica i košarkaških profesionalaca uživo, plus oko 60.000 stream gledalaca." },
+      "broadcast": { "title": "Broadcast", "body": "TV-grade produkcija za finala sa distribucijom kroz regionalne emitere." },
+      "trophy": { "title": "Trofej", "body": "Title partneri na svakom postolju i svakoj službenoj fotografiji." },
+      "community": { "title": "Zajednica", "body": "Cjelogodišnji program kroz partner škole i akademije." }
+    },
+    "ctaEyebrow": "Sljedeći korak",
+    "ctaTitle": "Uzmi slot prije nego što nestane.",
+    "becomePartner": "Postani partner",
+    "downloadDeck": "Preuzmi partner deck"
+  },
+  "media": {
+    "title": "Medija",
+    "lead": "Fotografije, video i live prijenos sa svih šest terena.",
+    "stream": "Live stream",
+    "streamTitle": "Svih šest terena. Jedan feed.",
+    "soon": "Live prijenos kreće prvog dana takmičenja.",
+    "playReel": "Pusti reel",
+    "reel": {
+      "1": { "title": "Tip-off reel", "duration": "0:90" },
+      "2": { "title": "Iza scene", "duration": "2:14" },
+      "3": { "title": "Sarajevo zimi", "duration": "1:42" }
+    },
+    "galleryEyebrow": "Galerija",
+    "galleryTitle": "Kadrovi sa parketa.",
+    "press": {
+      "eyebrow": "Press kit",
+      "title": "Sve što treba za priču.",
+      "body": "Logo paket, foto paket, fact sheet, izjava organizacijskog odbora i brand smjernice.",
+      "kit": "Press kit (.zip)",
+      "logos": "Logo paket (.zip)"
+    },
+    "accreditation": {
+      "eyebrow": "Akreditacija",
+      "title": "Aplikacija za press pristup.",
+      "fields": {
+        "fullName": "Ime i prezime",
+        "outlet": "Medijska kuća",
+        "email": "Email",
+        "phone": "Telefon",
+        "notes": "Napomene"
+      },
+      "submit": "Pošalji aplikaciju"
+    }
+  },
+  "register": {
+    "title": "Prijavi klub",
+    "lead": "Prijava u četiri koraka. Potvrda po završetku.",
+    "steps": ["Klub", "Kategorije", "Smještaj", "Potvrda"],
+    "fields": {
+      "clubName": "Naziv kluba",
+      "city": "Grad",
+      "country": "Zemlja",
+      "contact": "Kontakt osoba",
+      "email": "Email",
+      "phone": "Telefon",
+      "categories": "Odabrane kategorije",
+      "needsAccommodation": "Potreban nam je smještaj",
+      "rooms": "Sobe",
+      "nights": "Noći",
+      "notes": "Napomene (opcionalno)"
+    },
+    "next": "Dalje",
+    "back": "Nazad",
+    "submit": "Pošalji prijavu",
+    "success": "Prijava primljena. Tim odgovara unutar 48 sati.",
+    "error": "Nešto je pošlo po zlu. Pokušaj ponovo.",
+    "confirm": { "eyebrow": "Potvrdi i pošalji" }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Direktna komunikacija sa organizacijskim odborom.",
+    "channelsEyebrow": "Kanali",
+    "channelsTitle": "Tri inboxa. Jedan tim.",
+    "channels": {
+      "general": "Opšte",
+      "register": "Prijave klubova",
+      "partners": "Sponzorstva i partnerstva"
+    },
+    "addressLabel": "Ured",
+    "hoursLabel": "Radno vrijeme",
+    "socialLabel": "Društvene mreže",
+    "form": {
+      "name": "Vaše ime",
+      "email": "Vaš email",
+      "subject": "Tema",
+      "message": "Poruka",
+      "submit": "Pošalji poruku",
+      "success": "Poruka poslana. Tim odgovara unutar 48 sati.",
+      "error": "Nešto je pošlo po zlu. Pokušaj ponovo."
+    }
+  },
+  "footer": {
+    "tag": "Sarajevo · 28 — 31. januar 2027",
+    "title": "Sarajevo\nInternational\nYouth Basketball.",
+    "lead": "70 ekipa. 16 zemalja. 6 dvorana. Četiri dana koja Sarajevo pretvaraju u epicentar omladinske košarke.",
+    "navHeading": "Navigacija",
+    "contactHeading": "Kontakt",
+    "followHeading": "Pratite",
+    "rights": "Sva prava zadržana.",
+    "privacy": "Privatnost",
+    "terms": "Uslovi",
+    "madeIn": "Napravljeno s pažnjom u Sarajevu."
+  },
+  "languageSwitcher": { "label": "Jezik" }
+}
