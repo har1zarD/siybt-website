@@ -1,9 +1,86 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import createGlobe from "cobe";
 import { useTranslations } from "next-intl";
 import { COUNTRIES } from "@/lib/utils";
 import { Reveal } from "@/components/reveal";
 import { Marquee } from "@/components/marquee";
+
+const MARKERS: Array<{ location: [number, number]; size: number }> = [
+  { location: [43.8563, 18.4131], size: 0.12 }, // Sarajevo (host)
+  { location: [45.815, 15.9819], size: 0.06 }, // Zagreb
+  { location: [44.7866, 20.4489], size: 0.06 }, // Beograd
+  { location: [42.4304, 19.2594], size: 0.06 }, // Podgorica
+  { location: [46.0569, 14.5058], size: 0.06 }, // Ljubljana
+  { location: [41.9981, 21.4254], size: 0.06 }, // Skopje
+  { location: [52.52, 13.405], size: 0.06 }, // Berlin
+  { location: [48.2082, 16.3738], size: 0.06 }, // Beč
+  { location: [47.3769, 8.5417], size: 0.06 }, // Zürich
+  { location: [59.3293, 18.0686], size: 0.06 }, // Stockholm
+  { location: [59.9139, 10.7522], size: 0.06 }, // Oslo
+  { location: [55.6761, 12.5683], size: 0.06 }, // Kopenhagen
+  { location: [41.0082, 28.9784], size: 0.06 }, // Istanbul
+  { location: [41.9028, 12.4964], size: 0.06 }, // Rim
+  { location: [48.8566, 2.3522], size: 0.06 }, // Pariz
+  { location: [52.3676, 4.9041], size: 0.06 }, // Amsterdam
+];
+
+function GlobeCanvas() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    if (!canvasRef.current) return;
+    const canvas = canvasRef.current;
+    let phi = 0;
+    let raf = 0;
+    const getWidth = () => canvas.offsetWidth;
+
+    const globe = createGlobe(canvas, {
+      devicePixelRatio: 2,
+      width: getWidth() * 2,
+      height: getWidth() * 2,
+      phi: 0,
+      theta: 0.25,
+      dark: 1,
+      diffuse: 1.2,
+      mapSamples: 16000,
+      mapBrightness: 6,
+      baseColor: [0.18, 0.22, 0.32],
+      markerColor: [1, 0.353, 0.122],
+      glowColor: [1, 0.45, 0.2],
+      markers: MARKERS,
+    });
+
+    const tick = () => {
+      phi += 0.004;
+      const w = getWidth() * 2;
+      globe.update({ phi, width: w, height: w });
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+
+    const onResize = () => {
+      const w = getWidth() * 2;
+      globe.update({ width: w, height: w });
+    };
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      globe.destroy();
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="aspect-square w-full max-w-[560px] mx-auto"
+      style={{ contain: "layout paint size" }}
+    />
+  );
+}
 
 export function TeamsGlobe() {
   const t = useTranslations("globe");
@@ -20,50 +97,7 @@ export function TeamsGlobe() {
         </div>
 
         <div className="md:col-span-7 relative">
-          <div className="aspect-square w-full max-w-[560px] mx-auto relative">
-            <div className="absolute inset-0 rounded-full border border-white/20 animate-spin-slow" />
-            <div className="absolute inset-[6%] rounded-full border border-white/15" />
-            <div className="absolute inset-[14%] rounded-full border border-dashed border-white/15" />
-            <div className="absolute inset-[24%] rounded-full bg-gradient-to-br from-[var(--color-cold)]/55 to-[var(--color-primary-deep)]/80 shadow-[0_0_80px_-10px_rgba(255,90,31,0.35)] backdrop-blur" />
-            <div className="absolute inset-[24%] rounded-full border border-white/20" />
-            <div className="absolute inset-0 grid place-items-center">
-              <div className="text-center">
-                <div className="font-mono text-[10px] tracking-[0.3em] text-[var(--color-snow)]/70">SARAJEVO</div>
-                <div className="mt-2 font-display text-3xl md:text-4xl text-[var(--color-accent)] leading-tight">43°51′ N</div>
-                <div className="font-display text-3xl md:text-4xl text-[var(--color-accent)] leading-tight">18°25′ E</div>
-                <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-1 font-mono text-[10px] tracking-[0.2em] text-white/70">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)] animate-pulse-dot" />
-                  HOST CITY
-                </div>
-              </div>
-            </div>
-            {/* country pins arranged in a circle */}
-            {COUNTRIES.slice(0, 14).map((c, i) => {
-              const angle = (i / 14) * Math.PI * 2 - Math.PI / 2;
-              const r = 46;
-              const x = 50 + Math.cos(angle) * r;
-              const y = 50 + Math.sin(angle) * r;
-              const onLeft = x < 50;
-              return (
-                <span
-                  key={c}
-                  className="absolute -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: `${x.toFixed(4)}%`, top: `${y.toFixed(4)}%` }}
-                >
-                  <span className="relative block h-2.5 w-2.5 rounded-full bg-[var(--color-accent)] shadow-[0_0_0_5px_rgba(255,90,31,0.18)]">
-                    <span className="absolute inset-0 rounded-full bg-[var(--color-accent)] animate-ping opacity-60" />
-                  </span>
-                  <span
-                    className={`absolute top-1/2 -translate-y-1/2 whitespace-nowrap font-mono text-[9px] tracking-[0.18em] uppercase text-white/65 ${
-                      onLeft ? "right-full mr-2" : "left-full ml-2"
-                    } hidden md:inline`}
-                  >
-                    {c}
-                  </span>
-                </span>
-              );
-            })}
-          </div>
+          <GlobeCanvas />
         </div>
       </div>
 
