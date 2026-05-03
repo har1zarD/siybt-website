@@ -10,6 +10,7 @@ export const routing = defineRouting({
     "/teams": { en: "/teams", bs: "/ekipe" },
     "/schedule": { en: "/schedule", bs: "/raspored" },
     "/venues": { en: "/venues", bs: "/dvorane" },
+    "/stay": { en: "/stay", bs: "/smjestaj" },
     "/family": { en: "/family", bs: "/family" },
     "/sponsors": { en: "/sponsors", bs: "/sponzori" },
     "/media": { en: "/media", bs: "/medija" },

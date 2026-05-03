@@ -14,10 +14,10 @@ export function Stats() {
   ];
   return (
     <section className="relative bg-[var(--color-ink)] text-[var(--color-snow)] py-24 md:py-32 grain">
-      <div className="container-edge mx-auto grid grid-cols-2 gap-px bg-white/10 md:grid-cols-4">
+      <div className="container-edge mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/10 border-y border-white/10">
         {items.map(({ k, n }, i) => (
           <Reveal key={k} delay={i * 0.06}>
-            <div className="bg-[var(--color-ink)] px-6 py-10 md:py-14">
+            <div className="px-6 py-10 md:py-14">
               <div className="text-eyebrow text-[var(--color-accent)]">0{i + 1}</div>
               <div className="mt-6 font-mono text-6xl md:text-7xl tabular-nums tracking-tight leading-none">
                 <NumberTicker value={n} />

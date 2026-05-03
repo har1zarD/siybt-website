@@ -78,7 +78,7 @@ export function ModeBadge({ mode }: { mode: "live" | "sample" }) {
   if (mode === "live") {
     return <span className="inline-block rounded-[2px] bg-[var(--color-ink)] px-2 py-0.5 text-[9px] uppercase tracking-[0.18em] text-[var(--color-snow)]">Live DB</span>;
   }
-  return <span className="inline-block rounded-[2px] bg-[var(--color-accent)] px-2 py-0.5 text-[9px] uppercase tracking-[0.18em] text-[var(--color-snow)]">Sample data — set DATABASE_URL</span>;
+  return <span className="inline-block rounded-[2px] bg-[var(--color-accent)] px-2 py-0.5 text-[9px] uppercase tracking-[0.18em] text-[var(--color-snow)]">Sample data - set DATABASE_URL</span>;
 }
 
 export function fmtDate(d: Date | string) {

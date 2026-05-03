@@ -64,19 +64,21 @@ export default async function FamilyPage({ params }: { params: Promise<{ locale:
         </ul>
       </section>
 
-      {/* room types + ski add-on */}
+      {/* room types + pool perk */}
       <section className="bg-[var(--color-paper-warm)] py-24 md:py-32">
         <div className="container-edge mx-auto grid gap-10 md:grid-cols-3">
           {([
-            { k: "single", price: "100" },
-            { k: "double", price: "160" },
-            { k: "ski", price: "+45" },
-          ] as const).map(({ k, price }) => (
+            { k: "single", price: "100", showPrice: true },
+            { k: "double", price: "160", showPrice: true },
+            { k: "pool", price: "", showPrice: false },
+          ] as const).map(({ k, price, showPrice }) => (
             <article key={k} className="rounded-[var(--radius-md)] border border-[var(--color-line-strong)] bg-[var(--color-snow)] p-8">
               <div className="text-eyebrow text-[var(--color-accent)]">{t(`rooms.${k}.tag`)}</div>
               <h3 className="mt-4 font-display text-3xl">{t(`rooms.${k}.title`)}</h3>
               <p className="mt-3 text-sm text-[var(--color-ink)]/65 leading-relaxed">{t(`rooms.${k}.body`)}</p>
-              <div className="mt-8 font-mono text-4xl tabular-nums">{price} <span className="text-base text-[var(--color-ink)]/55">KM</span></div>
+              {showPrice && (
+                <div className="mt-8 font-mono text-4xl tabular-nums">{price} <span className="text-base text-[var(--color-ink)]/55">KM</span></div>
+              )}
             </article>
           ))}
         </div>
@@ -110,9 +112,6 @@ export default async function FamilyPage({ params }: { params: Promise<{ locale:
               />
             </label>
           ))}
-          <label className="md:col-span-2 mt-2 inline-flex items-center gap-2 text-sm">
-            <input type="checkbox" className="accent-[var(--color-accent)]" /> {t("book.skiAddon")}
-          </label>
           <button type="submit" className="md:col-span-2 mt-2 inline-flex items-center justify-center rounded-[var(--radius-sm)] bg-[var(--color-accent)] px-6 py-3.5 text-[11px] uppercase tracking-[0.2em] text-[var(--color-snow)] hover:bg-[var(--color-ink)] transition-colors">
             {t("book.submit")}
           </button>

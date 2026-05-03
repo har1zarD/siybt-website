@@ -40,17 +40,6 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             ))}
           </ul>
 
-          <div className="mt-10 grid gap-3 md:grid-cols-2 text-sm">
-            <div>
-              <div className="text-eyebrow text-[var(--color-ink)]/55">{t("addressLabel")}</div>
-              <div className="mt-2">SIYBT 2027<br />Arena Hotel Hills 1<br />Butmirska cesta 18<br />71210 Ilidža, Sarajevo</div>
-            </div>
-            <div>
-              <div className="text-eyebrow text-[var(--color-ink)]/55">{t("hoursLabel")}</div>
-              <div className="mt-2">Mon — Fri · 09:00 — 18:00<br />CET</div>
-            </div>
-          </div>
-
           <div className="mt-10">
             <div className="text-eyebrow text-[var(--color-ink)]/55">{t("socialLabel")}</div>
             <div className="mt-3 flex gap-2">
@@ -63,19 +52,6 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
         <div className="md:col-span-7">
           <ContactForm />
-        </div>
-      </section>
-
-      {/* venue map block */}
-      <section className="container-edge mx-auto pb-24">
-        <div className="relative aspect-[16/7] overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line-strong)] bg-[var(--color-paper-warm)]">
-          <iframe
-            title="Sarajevo map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=18.32,43.81,18.49,43.89&layer=mapnik&marker=43.8231,18.3318"
-            className="absolute inset-0 h-full w-full grayscale-[0.6]"
-            loading="lazy"
-          />
-          <div className="absolute bottom-4 left-4 rounded-[var(--radius-sm)] bg-[var(--color-snow)] px-3 py-1.5 font-mono text-[10px] tracking-[0.2em]">SARAJEVO · 43°51′ N · 18°25′ E</div>
         </div>
       </section>
     </>

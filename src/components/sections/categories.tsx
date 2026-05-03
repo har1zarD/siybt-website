@@ -55,7 +55,7 @@ export function Categories() {
           <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
         </Reveal>
         <h2 className="mt-6 text-giant whitespace-pre-line">{t("title")}</h2>
-        <div className="mt-6 text-eyebrow text-[var(--color-snow)]/55">— {t("drag")}</div>
+        <div className="mt-6 text-eyebrow text-[var(--color-snow)]/55">- {t("drag")}</div>
       </div>
 
       <div className="relative mt-12 h-[70vh] overflow-hidden">

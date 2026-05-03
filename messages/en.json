@@ -1,12 +1,13 @@
 {
   "meta": {
-    "title": "SIYBT 2027 — Sarajevo International Youth Basketball Tournament",
+    "title": "SIYBT 2027 - Sarajevo International Youth Basketball Tournament",
     "description": "28–31 January 2027. Sarajevo becomes the epicenter of youth basketball. 70 teams, 8 categories, 16 countries, 7 venues."
   },
   "nav": {
     "tournament": "Tournament",
     "schedule": "Schedule",
     "venues": "Venues",
+    "stay": "Stay",
     "teams": "Teams",
     "family": "Family",
     "sponsors": "Sponsors",
@@ -31,11 +32,11 @@
     "seconds": "SEC"
   },
   "hero": {
-    "eyebrow": "28 — 31 JANUARY 2027 · SARAJEVO",
+    "eyebrow": "28 - 31 JANUARY 2027 · SARAJEVO",
     "line1": "SARAJEVO INTERNATIONAL",
     "line2": "YOUTH BASKETBALL",
     "tagline": "WHERE BALKAN BASKETBALL MEETS THE WORLD.",
-    "subheadline": "Where Balkan basketball meets the world. 70 teams. 8 categories. 16 countries. 4 days in Sarajevo.",
+    "subheadline": "Where Balkan basketball meets the world. 70 teams. 8 categories. 16 countries. 3 days of competition in Sarajevo.",
     "ctaPrimary": "Register a club",
     "ctaGhost": "View the schedule"
   },
@@ -75,7 +76,7 @@
   "venuesSection": {
     "eyebrow": "Seven venues. One city.",
     "title": "Sarajevo, court by court.",
-    "subtitle": "From Ilidža to the city centre — every game inside a 20-minute radius."
+    "subtitle": "From Ilidža to the city centre - every game inside a 20-minute radius."
   },
   "globe": {
     "eyebrow": "Sixteen countries on the floor",
@@ -95,24 +96,26 @@
   },
   "tournament": {
     "title": "Tournament",
-    "lead": "Four days of basketball, eight categories, six venues across Sarajevo.",
-    "dates": "28 — 31 January 2027",
+    "lead": "Three days of competition (Friday - Sunday), eight categories, seven venues across Sarajevo. Teams arrive on Thursday, finals on Sunday.",
+    "dates": "28 - 31 January 2027",
     "countdownLabel": "Tip-off in",
     "categoriesEyebrow": "Categories",
     "categoriesTitle": "Eight categories on the floor.",
-    "categoriesLead": "Boys and girls, U12 through U18 — eight parallel competitions across four days, with finals on Sunday.",
+    "categoriesLead": "Boys and girls, U12 through U18 - eight parallel competitions across three days, with finals on Sunday.",
     "fees": "Fees",
     "feesTitle": "Transparent club pricing.",
-    "feesClub": "Club fee — per registered team",
-    "feesAthlete": "Athlete fee — per child",
+    "feesMen": "Boys categories - per registered team",
+    "feesWomen": "Girls categories - per registered team",
+    "feesAthlete": "Athlete fee - per child",
+    "feesClub": "Club fee - per registered team",
     "format": "Format",
     "formatTitle": "Group stage to finals.",
-    "formatBody": "Group stage Thursday and Friday. Crossover knockout Saturday. Finals on Sunday with broadcast production. All games are 4 × 8 minutes for U12/U14 and 4 × 10 minutes for U16/U18.",
+    "formatBody": "Teams arrive Thursday. Group stage on Friday. Crossover knockout on Saturday. Finals on Sunday with broadcast production. All games are 4 × 8 minutes for U12/U14 and 4 × 10 minutes for U16/U18.",
     "formatDays": {
-      "thu": { "day": "Thursday", "label": "Group stage" },
+      "thu": { "day": "Thursday", "label": "Team arrivals" },
       "fri": { "day": "Friday", "label": "Group stage" },
       "sat": { "day": "Saturday", "label": "Knockouts" },
-      "sun": { "day": "Sunday", "label": "Finals" }
+      "sun": { "day": "Sunday", "label": "Finals & departure" }
     },
     "rules": "Rules",
     "rulesTitle": "FIBA youth, with a tournament edge.",
@@ -164,11 +167,29 @@
     "parkingValue": "On-site for delegations",
     "transit": "Transit",
     "transitValue": "Tram + bus connection",
-    "mapNote": "Sarajevo · 7 venues · 20-minute radius"
+    "mapNote": "Sarajevo · 7 venues · 20-minute radius",
+    "openDirections": "Open in Google Maps",
+    "directions": "Directions",
+    "stayTeaserTitle": "Need somewhere to stay?",
+    "stayTeaserBody": "Four partner hotels on Ilidža with pools, spa and the thermal complex - all walking distance from the arenas.",
+    "stayTeaserCta": "See accommodation"
+  },
+  "hotels": {
+    "eyebrow": "Where you stay",
+    "title": "Partner hotels.",
+    "lead": "Four hotels on Ilidža walking distance from the arenas. Pools, spa and thermal complex included for all delegation guests.",
+    "rooms": "Room types",
+    "amenities": "Amenities",
+    "visit": "Visit website",
+    "directions": "Directions"
+  },
+  "stayPage": {
+    "title": "Stay",
+    "lead": "Four partner hotels on Ilidža - pools, spa and thermal complex included. Built for teams, parents and delegations alike."
   },
   "family": {
     "title": "Family package",
-    "lead": "Built for parents. Hotel night, arena access and a city programme — all bundled.",
+    "lead": "Built for parents. Hotel night, arena access and a city programme - all bundled.",
     "price": "100 BAM / night per parent",
     "imageAlt": "Snowy Sarajevo cityscape with mountains",
     "imageCaption": "Late January in Sarajevo",
@@ -186,7 +207,7 @@
     "rooms": {
       "single": { "tag": "Single room", "title": "Solo parent", "body": "One parent, one bed, one breakfast. Built for the cleanest stay." },
       "double": { "tag": "Double room", "title": "Two parents", "body": "Two parents sharing a room with twin or queen bed configuration." },
-      "ski": { "tag": "Add-on", "title": "Jahorina day trip", "body": "Saturday day trip to Jahorina or Bjelašnica with skiing or sledding included." }
+      "pool": { "tag": "Included", "title": "Pool access", "body": "Hotel Hills and Hotel Terme include indoor pool access for guests - perfect for unwinding between games." }
     },
     "book": {
       "eyebrow": "Booking",
@@ -202,7 +223,6 @@
         "adults": "Adults",
         "children": "Children"
       },
-      "skiAddon": "Add the Jahorina day trip",
       "submit": "Send booking request"
     },
     "cta": "Talk to us"
@@ -225,7 +245,7 @@
     "perEdition": "edition",
     "whyEyebrow": "Why partner",
     "whyTitle": "A tournament with a real audience.",
-    "whyBody": "Four days, six venues, eight categories. The tournament reaches families across Bosnia, the wider region and the diaspora — both in arenas and through the multi-court live stream.",
+    "whyBody": "Three days of competition, seven venues, eight categories. The tournament reaches families across Bosnia, the wider region and the diaspora - both in arenas and through the multi-court live stream.",
     "benefits": {
       "reach": { "title": "Reach", "body": "840 athletes, families and basketball professionals on site, plus an estimated 60.000 stream viewers." },
       "broadcast": { "title": "Broadcast", "body": "TV-grade production for finals with regional broadcaster distribution." },
@@ -275,6 +295,18 @@
     "title": "Register a club",
     "lead": "Four-step registration. Confirmation on completion.",
     "steps": ["Club", "Categories", "Accommodation", "Confirm"],
+    "stepHints": [
+      "Basic club details and the contact person we'll work with.",
+      "Pick the categories your club is entering.",
+      "Pick a hotel - or tell us you're handling stay yourselves.",
+      "Review the summary before sending."
+    ],
+    "fieldGroups": { "club": "Club", "contact": "Contact person" },
+    "required": "This field is required",
+    "invalidEmail": "Enter a valid email",
+    "edit": "Edit",
+    "selectAll": "Select all",
+    "clear": "Clear",
     "fields": {
       "clubName": "Club name",
       "city": "City",
@@ -291,9 +323,29 @@
     "next": "Continue",
     "back": "Back",
     "submit": "Send registration",
+    "sending": "Sending…",
     "success": "Registration received. The team replies within 48 hours.",
+    "successEyebrow": "Submission received",
+    "successTitle": "Thanks - your registration is in.",
+    "successBody": "We've recorded your club's request. The organising team will review and reply within 48 hours with payment details and next steps.",
+    "successSummary": "Summary",
+    "backHome": "Back to home",
+    "seeStay": "See accommodation",
     "error": "Something went wrong. Please try again.",
-    "confirm": { "eyebrow": "Confirm and submit" }
+    "confirm": { "eyebrow": "Confirm and submit" },
+    "stay": {
+      "pickHotel": "Choose your accommodation",
+      "from": "From",
+      "perPersonNight": "KM / person / night",
+      "details": "Details",
+      "noneEyebrow": "Self-arranged",
+      "noneTitle": "We don't need accommodation",
+      "noneBody": "Your delegation will arrange its own stay. We'll only confirm matches and shuttle slots.",
+      "selected": "Selected",
+      "estimatedTotal": "Estimated total",
+      "estimatedNote": "Indicative - based on 2 people per room. Final invoice issued by hotel.",
+      "hotel": "Hotel"
+    }
   },
   "contact": {
     "title": "Contact",
@@ -319,9 +371,9 @@
     }
   },
   "footer": {
-    "tag": "Sarajevo · 28 — 31 January 2027",
+    "tag": "Sarajevo · 28 - 31 January 2027",
     "title": "Sarajevo\nInternational\nYouth Basketball.",
-    "lead": "70 teams. 16 countries. 7 venues. Four days that turn Sarajevo into the epicenter of youth basketball.",
+    "lead": "70 teams. 16 countries. 7 venues. Three days of competition that turn Sarajevo into the epicenter of youth basketball.",
     "navHeading": "Navigate",
     "contactHeading": "Contact",
     "followHeading": "Follow",
@@ -334,7 +386,7 @@
   "galleryHome": {
     "eyebrow": "From the floor",
     "title": "Frames from the tournament.",
-    "subtitle": "Selected stills from previous training camps and friendlies — a preview of what 2027 will look like inside the arenas.",
+    "subtitle": "Selected stills from previous training camps and friendlies - a preview of what 2027 will look like inside the arenas.",
     "creditPhotography": "Photography",
     "creditCamera": "Multi-camera",
     "creditVenue": "Venue stills",

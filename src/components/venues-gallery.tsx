@@ -4,83 +4,52 @@ import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { VENUES, type Venue } from "@/lib/utils";
-import { ChevronLeft, ChevronRight, MapPin, Train, Car } from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin, Train, Car, Navigation } from "lucide-react";
 import Image from "next/image";
 
 // Arena Hotel Hills 1, Hotel Hills 2, Hotel Hills 3, KSC Ilidža, Dvorana Hrasnica 1, Dvorana Hrasnica 2, Malak Regency
 const VENUE_PHOTOS = [
   [
-    "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2304478/pexels-photo-2304478.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2961948/pexels-photo-2961948.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/hills1-a.jpg",
+    "/venues/hills1-b.jpg",
+    "/venues/hills-c.jpg",
   ],
   [
-    "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/hills1-b.jpg",
+    "/venues/hills-c.jpg",
+    "/venues/hills1-a.jpg",
   ],
   [
-    "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2304478/pexels-photo-2304478.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/hills-c.jpg",
+    "/venues/hills1-a.jpg",
+    "/venues/hills1-b.jpg",
   ],
   [
-    "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/ksc-ilidza-1.jpg",
   ],
   [
-    "https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2961948/pexels-photo-2961948.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/hrasnica.webp",
+    "/venues/hrasnica-2.jpg",
+    "/venues/hrasnica-3.jpg",
   ],
   [
-    "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2304478/pexels-photo-2304478.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/hrasnica-2.jpg",
+    "/venues/hrasnica-3.jpg",
+    "/venues/hrasnica.webp",
   ],
   [
-    "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "/venues/malak-1.jpg",
+    "/venues/malak-2.jpg",
   ],
 ];
 
 export function VenuesGallery() {
-  const t = useTranslations("venuesPage");
   return (
-    <>
-      {/* static map mosaic */}
-      <section className="container-edge mx-auto pt-16 pb-10">
-        <div className="relative aspect-[16/8] overflow-hidden rounded-[var(--radius-md)] border border-[var(--color-line-strong)] bg-[var(--color-paper-warm)]">
-          <Image
-            src="https://api.maptiler.com/maps/streets-v2-dark/static/18.4131,43.8563,11.5/1600x800.png?key=demo"
-            alt="Sarajevo map with venues"
-            fill
-            className="object-cover opacity-90"
-            unoptimized
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/60 to-transparent" />
-          {/* simulated pins */}
-          {[
-            [22, 60], [28, 54], [34, 50], [42, 64], [56, 70], [64, 66], [82, 48],
-          ].map(([x, y], i) => (
-            <span key={i} className="absolute -translate-x-1/2 -translate-y-full" style={{ left: `${x}%`, top: `${y}%` }}>
-              <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--color-accent)] text-[10px] font-mono text-[var(--color-snow)] shadow-[0_0_0_5px_rgba(255,90,31,0.18)]">
-                {i + 1}
-              </span>
-            </span>
-          ))}
-          <div className="absolute bottom-4 left-4 text-eyebrow text-[var(--color-snow)]/70">{t("mapNote")}</div>
-        </div>
-      </section>
-
-      <section className="container-edge mx-auto pb-24 md:pb-32 space-y-20">
-        {VENUES.map((v, i) => (
-          <VenueRow key={v.name} index={i} venue={v} photos={VENUE_PHOTOS[i]} />
-        ))}
-      </section>
-    </>
+    <section className="container-edge mx-auto pt-16 pb-24 md:pb-32 space-y-20">
+      {VENUES.map((v, i) => (
+        <VenueRow key={v.name} index={i} venue={v} photos={VENUE_PHOTOS[i]} />
+      ))}
+    </section>
   );
 }
 
@@ -130,6 +99,14 @@ function VenueRow({ index, venue, photos }: { index: number; venue: Venue; photo
           <Row k={<span className="inline-flex items-center gap-2"><Car className="h-3.5 w-3.5" /> {t("parking")}</span>} v={t("parkingValue")} />
           <Row k={<span className="inline-flex items-center gap-2"><Train className="h-3.5 w-3.5" /> {t("transit")}</span>} v={t("transitValue")} />
         </dl>
+        <a
+          href={`https://www.google.com/maps/dir/?api=1&destination=${venue.lat},${venue.lng}&destination_place_id=${encodeURIComponent(venue.name)}`}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="mt-6 inline-flex items-center gap-2 rounded-[var(--radius-sm)] border border-[var(--color-ink)] bg-[var(--color-ink)] px-5 py-3 text-[10px] uppercase tracking-[0.2em] text-[var(--color-snow)] hover:bg-transparent hover:text-[var(--color-ink)] transition-colors"
+        >
+          <Navigation className="h-3.5 w-3.5" /> {t("directions")}
+        </a>
       </div>
     </article>
   );

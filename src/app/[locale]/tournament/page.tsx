@@ -80,8 +80,12 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
             <h3 className="mt-4 text-big">{t("feesTitle")}</h3>
             <ul className="mt-8 divide-y divide-white/10 border-y border-white/10">
               <li className="flex items-baseline justify-between py-5">
-                <span className="text-base">{t("feesClub")}</span>
+                <span className="text-base">{t("feesMen")}</span>
                 <span className="font-mono text-3xl tabular-nums text-[var(--color-accent)]">300 KM</span>
+              </li>
+              <li className="flex items-baseline justify-between py-5">
+                <span className="text-base">{t("feesWomen")}</span>
+                <span className="font-mono text-3xl tabular-nums text-[var(--color-accent)]">150 KM</span>
               </li>
               <li className="flex items-baseline justify-between py-5">
                 <span className="text-base">{t("feesAthlete")}</span>

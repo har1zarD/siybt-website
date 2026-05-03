@@ -6,10 +6,11 @@ import { useRef, type ReactNode } from "react";
 
 const HERO_IMAGES = {
   tournament: "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=2400",
-  schedule: "https://images.pexels.com/photos/2304478/pexels-photo-2304478.jpeg?auto=compress&cs=tinysrgb&w=2400",
-  venues: "https://images.pexels.com/photos/2961948/pexels-photo-2961948.jpeg?auto=compress&cs=tinysrgb&w=2400",
+  schedule: "/venues/hills-c.jpg",
+  venues: "/venues/hills1-b.jpg",
   teams: "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=2400",
-  family: "https://images.pexels.com/photos/3601094/pexels-photo-3601094.jpeg?auto=compress&cs=tinysrgb&w=2400",
+  family: "/family-arena.jpg",
+  stay: "/hotels/hills-exterior.jpg",
   sponsors: "https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=2400",
   media: "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=2400",
   register: "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=2400",
@@ -43,7 +44,7 @@ export function PageHero({
   const fade = useTransform(scrollYProgress, [0, 0.9], [1, 0]);
 
   const img = variant ? HERO_IMAGES[variant] : null;
-  const indexLabel = (n?: number) => (n ? String(n).padStart(2, "0") : "—");
+  const indexLabel = (n?: number) => (n ? String(n).padStart(2, "0") : "-");
 
   return (
     <section
@@ -87,7 +88,7 @@ export function PageHero({
           <span>{eyebrow}</span>
         </div>
         <div className="hidden md:flex items-center gap-3">
-          <span>SARAJEVO · 28 — 31 / 01 / 2027</span>
+          <span>SARAJEVO · 28 - 31 / 01 / 2027</span>
           <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-accent)] animate-pulse-dot" />
         </div>
       </div>

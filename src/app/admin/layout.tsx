@@ -7,7 +7,7 @@ const sans = Inter_Tight({ subsets: ["latin", "latin-ext"], variable: "--font-sa
 const display = Anton({ subsets: ["latin", "latin-ext"], weight: "400", variable: "--font-display", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin", "latin-ext"], variable: "--font-mono", display: "swap" });
 
-export const metadata: Metadata = { title: "SIYBT — Admin", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "SIYBT - Admin", robots: { index: false, follow: false } };
 
 const NAV = [
   ["/admin", "Overview"],

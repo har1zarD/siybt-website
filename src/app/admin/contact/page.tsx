@@ -15,7 +15,7 @@ export default async function ContactPage() {
   ];
   return (
     <>
-      <PageHeader title="Contact messages" subtitle={`${rows.length} total — newest first.`} action={<ModeBadge mode={mode} />} />
+      <PageHeader title="Contact messages" subtitle={`${rows.length} total - newest first.`} action={<ModeBadge mode={mode} />} />
       <DataTable rows={rows} columns={cols} empty="No contact messages yet." />
     </>
   );

@@ -75,7 +75,7 @@ export function ScheduleBoard() {
           label={t("filterCategory")}
           value={cat}
           onChange={setCat}
-          options={[{ v: "all", l: t("all") }, ...CATEGORIES.map((c) => ({ v: c.code, l: `${c.code} — ${c.label}` }))]}
+          options={[{ v: "all", l: t("all") }, ...CATEGORIES.map((c) => ({ v: c.code, l: `${c.code} - ${c.label}` }))]}
         />
         <FilterSelect
           label={t("filterVenue")}

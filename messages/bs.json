@@ -1,12 +1,13 @@
 {
   "meta": {
-    "title": "SIYBT 2027 — Sarajevo International Youth Basketball Tournament",
+    "title": "SIYBT 2027 - Sarajevo International Youth Basketball Tournament",
     "description": "28–31. januar 2027. Sarajevo postaje epicentar omladinske košarke. 70 ekipa, 8 kategorija, 16 zemalja, 7 dvorana."
   },
   "nav": {
     "tournament": "Turnir",
     "schedule": "Raspored",
     "venues": "Dvorane",
+    "stay": "Smještaj",
     "teams": "Ekipe",
     "family": "Family",
     "sponsors": "Sponzori",
@@ -31,11 +32,11 @@
     "seconds": "SEK"
   },
   "hero": {
-    "eyebrow": "28 — 31 JANUAR 2027 · SARAJEVO",
+    "eyebrow": "28 - 31 JANUAR 2027 · SARAJEVO",
     "line1": "SARAJEVO INTERNATIONAL",
     "line2": "YOUTH BASKETBALL",
     "tagline": "GDJE SE BALKANSKA KOŠARKA SUSREĆE SA SVIJETOM.",
-    "subheadline": "Gdje se balkanska košarka susreće sa svijetom. 70 ekipa. 8 kategorija. 16 zemalja. 4 dana u Sarajevu.",
+    "subheadline": "Gdje se balkanska košarka susreće sa svijetom. 70 ekipa. 8 kategorija. 16 zemalja. 3 dana takmičenja u Sarajevu.",
     "ctaPrimary": "Prijavi klub",
     "ctaGhost": "Pogledaj raspored"
   },
@@ -45,7 +46,7 @@
   "about": {
     "eyebrow": "O turniru",
     "title": "Kontinentalni razmjer. Sarajevska preciznost.",
-    "p1": "Sarajevo International Youth Basketball Tournament okuplja najjače omladinske programe iz BiH dijaspore, regije i šire Evrope kroz četiri dana takmičenja u sedam vrhunskih sarajevskih dvorana.",
+    "p1": "Sarajevo International Youth Basketball Tournament okuplja najjače omladinske programe iz BiH dijaspore, regije i šire Evrope kroz tri dana takmičenja (petak - nedjelja) u sedam vrhunskih sarajevskih dvorana.",
     "p2": "Misija je stvoriti susretište gdje mladi sportisti prvi put upoznaju Sarajevo, a Sarajevo prima najtalentovaniju omladinsku košarkašku generaciju Balkana.",
     "p3": "Iza turnira stoji organizacijski odbor sa decenijama zajedničkog iskustva u sportu, košarkaškoj operativi i produkciji eventova velikog formata."
   },
@@ -75,12 +76,12 @@
   "venuesSection": {
     "eyebrow": "Sedam dvorana. Jedan grad.",
     "title": "Sarajevo, teren po teren.",
-    "subtitle": "Od Ilidže do centra — svaka utakmica unutar 20 minuta vožnje."
+    "subtitle": "Od Ilidže do centra - svaka utakmica unutar 20 minuta vožnje."
   },
   "globe": {
     "eyebrow": "Šesnaest zemalja na parketu",
     "title": "Od Stockholma do Skoplja.",
-    "subtitle": "Programi putuju iz cijele Evrope da podijele četiri dana košarke u Sarajevu."
+    "subtitle": "Programi putuju iz cijele Evrope da podijele tri dana košarke u Sarajevu."
   },
   "sponsorsSection": {
     "eyebrow": "Sa turnirom",
@@ -95,28 +96,30 @@
   },
   "tournament": {
     "title": "Turnir",
-    "lead": "Četiri dana košarke, osam kategorija, sedam dvorana širom Sarajeva.",
-    "dates": "28 — 31. januar 2027",
+    "lead": "Tri dana košarke (petak - nedjelja), osam kategorija, sedam dvorana širom Sarajeva. Ekipe stižu u četvrtak, finala su u nedjelju.",
+    "dates": "28 - 31. januar 2027",
     "countdownLabel": "Tip-off za",
     "categoriesEyebrow": "Kategorije",
     "categoriesTitle": "Osam kategorija na parketu.",
-    "categoriesLead": "Dječaci i djevojčice, U12 do U18 — osam paralelnih takmičenja kroz četiri dana, sa finalima u nedjelju.",
+    "categoriesLead": "Dječaci i djevojčice, U12 do U18 - osam paralelnih takmičenja kroz tri dana, sa finalima u nedjelju.",
     "fees": "Kotizacije",
     "feesTitle": "Transparentne cijene za klubove.",
-    "feesClub": "Kotizacija kluba — po prijavljenoj ekipi",
-    "feesAthlete": "Kotizacija djeteta — po djetetu",
+    "feesMen": "Muške kategorije - po prijavljenoj ekipi",
+    "feesWomen": "Ženske kategorije - po prijavljenoj ekipi",
+    "feesAthlete": "Kotizacija djeteta - po djetetu",
+    "feesClub": "Kotizacija kluba - po prijavljenoj ekipi",
     "format": "Format",
     "formatTitle": "Od grupne faze do finala.",
-    "formatBody": "Grupna faza četvrtak i petak. Ukrštena eliminacija subota. Finala u nedjelju sa broadcast produkcijom. Sve utakmice 4×8 minuta za U12/U14 i 4×10 minuta za U16/U18.",
+    "formatBody": "Ekipe dolaze u četvrtak. Grupna faza u petak. Ukrštena eliminacija u subotu. Finala u nedjelju sa broadcast produkcijom. Sve utakmice 4×8 minuta za U12/U14 i 4×10 minuta za U16/U18.",
     "formatDays": {
-      "thu": { "day": "Četvrtak", "label": "Grupna faza" },
+      "thu": { "day": "Četvrtak", "label": "Dolazak ekipa" },
       "fri": { "day": "Petak", "label": "Grupna faza" },
       "sat": { "day": "Subota", "label": "Eliminacije" },
-      "sun": { "day": "Nedjelja", "label": "Finala" }
+      "sun": { "day": "Nedjelja", "label": "Finala & odlazak" }
     },
     "rules": "Pravilnik",
     "rulesTitle": "FIBA pravila za mlađe kategorije.",
-    "rulesBody": "FIBA pravila za mlađe kategorije sa modificiranim trajanjem utakmice po kategoriji. Cijeli pravilnik dostavlja se klubovima nakon potvrde — uključujući podobnost, suđenje, ponašanje i tie-break proceduru.",
+    "rulesBody": "FIBA pravila za mlađe kategorije sa modificiranim trajanjem utakmice po kategoriji. Cijeli pravilnik dostavlja se klubovima nakon potvrde - uključujući podobnost, suđenje, ponašanje i tie-break proceduru.",
     "faq": {
       "eyebrow": "FAQ",
       "q1": "Kako se provjeravaju podobnost i godište?",
@@ -164,11 +167,29 @@
     "parkingValue": "Na lokaciji za delegacije",
     "transit": "Prevoz",
     "transitValue": "Tramvaj + autobus",
-    "mapNote": "Sarajevo · 7 dvorana · 20 minuta radius"
+    "mapNote": "Sarajevo · 7 dvorana · 20 minuta radius",
+    "openDirections": "Otvori u Google Maps",
+    "directions": "Navigacija",
+    "stayTeaserTitle": "Trebate smještaj?",
+    "stayTeaserBody": "Četiri partner hotela na Ilidži - bazeni, spa i termalni kompleks. Sve na pješačkoj udaljenosti od dvorana.",
+    "stayTeaserCta": "Pogledaj smještaj"
+  },
+  "hotels": {
+    "eyebrow": "Smještaj",
+    "title": "Partner hoteli.",
+    "lead": "Četiri hotela na Ilidži, na pješačkoj udaljenosti od dvorana. Bazeni, spa i termalni kompleks uključeni za delegacije.",
+    "rooms": "Tipovi soba",
+    "amenities": "Sadržaji",
+    "visit": "Posjeti web",
+    "directions": "Navigacija"
+  },
+  "stayPage": {
+    "title": "Smještaj",
+    "lead": "Četiri partner hotela na Ilidži - bazeni, spa i termalni kompleks uključeni. Za ekipe, roditelje i delegacije."
   },
   "family": {
     "title": "Family paket",
-    "lead": "Napravljen za roditelje. Hotelska noć, ulaz u dvoranu i gradski program — sve u jednom paketu.",
+    "lead": "Napravljen za roditelje. Hotelska noć, ulaz u dvoranu i gradski program - sve u jednom paketu.",
     "price": "100 KM / noć po roditelju",
     "imageAlt": "Snježno Sarajevo s planinama",
     "imageCaption": "Kraj januara u Sarajevu",
@@ -186,7 +207,7 @@
     "rooms": {
       "single": { "tag": "Jednokrevetna", "title": "Jedan roditelj", "body": "Jedan roditelj, jedan krevet, jedan doručak. Najjednostavniji boravak." },
       "double": { "tag": "Dvokrevetna", "title": "Dva roditelja", "body": "Dva roditelja u sobi sa twin ili queen krevetom." },
-      "ski": { "tag": "Dodatak", "title": "Jahorina day-trip", "body": "Subotnji izlet na Jahorinu ili Bjelašnicu sa skijanjem ili sankanjem." }
+      "pool": { "tag": "Uključeno", "title": "Pristup bazenu", "body": "Hotel Hills i Hotel Terme nude pristup zatvorenom bazenu za goste - savršeno za opuštanje između utakmica." }
     },
     "book": {
       "eyebrow": "Rezervacija",
@@ -202,7 +223,6 @@
         "adults": "Odrasli",
         "children": "Djeca"
       },
-      "skiAddon": "Dodaj Jahorina day-trip",
       "submit": "Pošalji zahtjev"
     },
     "cta": "Pošalji upit"
@@ -225,7 +245,7 @@
     "perEdition": "izdanje",
     "whyEyebrow": "Zašto partner",
     "whyTitle": "Turnir s pravom publikom.",
-    "whyBody": "Četiri dana, sedam dvorana, osam kategorija. Turnir doseže porodice širom Bosne, regije i dijaspore — i u dvoranama i kroz multi-court live stream.",
+    "whyBody": "Tri dana takmičenja, sedam dvorana, osam kategorija. Turnir doseže porodice širom Bosne, regije i dijaspore - i u dvoranama i kroz multi-court live stream.",
     "benefits": {
       "reach": { "title": "Doseg", "body": "840 sportista, porodica i košarkaških profesionalaca uživo, plus oko 60.000 stream gledalaca." },
       "broadcast": { "title": "Broadcast", "body": "TV-grade produkcija za finala sa distribucijom kroz regionalne emitere." },
@@ -275,6 +295,18 @@
     "title": "Prijavi klub",
     "lead": "Prijava u četiri koraka. Potvrda po završetku.",
     "steps": ["Klub", "Kategorije", "Smještaj", "Potvrda"],
+    "stepHints": [
+      "Osnovni podaci o klubu i kontakt osobi.",
+      "Odaberi kategorije sa kojima se prijavljujete.",
+      "Izaberi smještaj - ili označi vlastiti aranžman.",
+      "Provjeri sažetak prije slanja."
+    ],
+    "fieldGroups": { "club": "Klub", "contact": "Kontakt osoba" },
+    "required": "Polje je obavezno",
+    "invalidEmail": "Unesi ispravan email",
+    "edit": "Izmijeni",
+    "selectAll": "Odaberi sve",
+    "clear": "Poništi",
     "fields": {
       "clubName": "Naziv kluba",
       "city": "Grad",
@@ -291,9 +323,29 @@
     "next": "Dalje",
     "back": "Nazad",
     "submit": "Pošalji prijavu",
+    "sending": "Šaljemo…",
     "success": "Prijava primljena. Tim odgovara unutar 48 sati.",
+    "successEyebrow": "Prijava primljena",
+    "successTitle": "Hvala - vaša prijava je zaprimljena.",
+    "successBody": "Zabilježili smo prijavu vašeg kluba. Organizacioni tim će pregledati zahtjev i odgovoriti unutar 48 sati sa instrukcijama za uplatu i sljedećim koracima.",
+    "successSummary": "Sažetak",
+    "backHome": "Nazad na početnu",
+    "seeStay": "Pogledaj smještaj",
     "error": "Nešto je pošlo po zlu. Pokušaj ponovo.",
-    "confirm": { "eyebrow": "Potvrdi i pošalji" }
+    "confirm": { "eyebrow": "Potvrdi i pošalji" },
+    "stay": {
+      "pickHotel": "Odaberi smještaj",
+      "from": "Od",
+      "perPersonNight": "KM / osoba / noć",
+      "details": "Detalji",
+      "noneEyebrow": "Vlastiti aranžman",
+      "noneTitle": "Ne treba nam smještaj",
+      "noneBody": "Vaša delegacija organizuje smještaj sama. Mi potvrđujemo samo termine utakmica i shuttle.",
+      "selected": "Odabrano",
+      "estimatedTotal": "Procijenjeni iznos",
+      "estimatedNote": "Orijentaciono - bazirano na 2 osobe po sobi. Konačna cijena ide kroz hotel.",
+      "hotel": "Hotel"
+    }
   },
   "contact": {
     "title": "Kontakt",
@@ -319,9 +371,9 @@
     }
   },
   "footer": {
-    "tag": "Sarajevo · 28 — 31. januar 2027",
+    "tag": "Sarajevo · 28 - 31. januar 2027",
     "title": "Sarajevo\nInternational\nYouth Basketball.",
-    "lead": "70 ekipa. 16 zemalja. 7 dvorana. Četiri dana koja Sarajevo pretvaraju u epicentar omladinske košarke.",
+    "lead": "70 ekipa. 16 zemalja. 7 dvorana. Tri dana takmičenja koja Sarajevo pretvaraju u epicentar omladinske košarke.",
     "navHeading": "Navigacija",
     "contactHeading": "Kontakt",
     "followHeading": "Pratite",
@@ -334,7 +386,7 @@
   "galleryHome": {
     "eyebrow": "Sa parketa",
     "title": "Kadrovi sa turnira.",
-    "subtitle": "Izabrani trenuci sa prethodnih kampova i prijateljskih utakmica — najava onoga što čeka dvorane u 2027.",
+    "subtitle": "Izabrani trenuci sa prethodnih kampova i prijateljskih utakmica - najava onoga što čeka dvorane u 2027.",
     "creditPhotography": "Fotografija",
     "creditCamera": "Multi-kamera",
     "creditVenue": "Kadrovi dvorana",

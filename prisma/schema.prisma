@@ -1,4 +1,4 @@
-// Prisma schema for SIYBT 2027 — Postgres on Supabase
+// Prisma schema for SIYBT 2027 - Postgres on Supabase
 // Run:
 //   npx prisma generate          (after schema changes)
 //   npx prisma migrate dev       (local development)
@@ -25,6 +25,7 @@ model Registration {
   phone              String
   categories         String[]
   needsAccommodation Boolean  @default(false)
+  hotelChoice        String?  // hills | malak | hollywood | none
   rooms              Int?
   nights             Int?
   notes              String?

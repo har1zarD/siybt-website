@@ -12,6 +12,7 @@ const NAV = [
   { href: "/tournament" as const, key: "tournament" },
   { href: "/schedule" as const, key: "schedule" },
   { href: "/venues" as const, key: "venues" },
+  { href: "/stay" as const, key: "stay" },
   { href: "/teams" as const, key: "teams" },
   { href: "/family" as const, key: "family" },
   { href: "/sponsors" as const, key: "sponsors" },
@@ -32,7 +33,7 @@ export function SiteNav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Every page sits on a dark hero at the top — keep the navbar in "snow" tone
+  // Every page sits on a dark hero at the top - keep the navbar in "snow" tone
   // until the user scrolls past it, then switch to "ink" once the paper backdrop kicks in.
   const tone = scrolled ? "ink" : "snow";
 
@@ -46,7 +47,7 @@ export function SiteNav() {
       )}
     >
       <div className={cn("container-edge mx-auto flex items-center justify-between transition-all", scrolled ? "py-3" : "py-5")}>
-        <Link href="/" className={cn("flex items-center gap-3 transition-colors", tone === "snow" ? "text-[var(--color-snow)]" : "text-[var(--color-ink)]")} aria-label="SIYBT — home">
+        <Link href="/" className={cn("flex items-center gap-3 transition-colors", tone === "snow" ? "text-[var(--color-snow)]" : "text-[var(--color-ink)]")} aria-label="SIYBT - home">
           <Image src="/logo.png" alt="SIYBT" width={40} height={40} priority className="h-9 w-9 object-contain" />
           <span className="font-display text-base tracking-[0.06em]">SIYBT 2027</span>
         </Link>

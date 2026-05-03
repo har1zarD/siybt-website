@@ -11,6 +11,7 @@ const schema = z.object({
   phone: z.string().min(5),
   categories: z.array(z.string()).min(1),
   needsAccommodation: z.boolean(),
+  hotelChoice: z.enum(["hills", "malak", "hollywood"]).optional(),
   rooms: z.number().int().min(0).optional(),
   nights: z.number().int().min(0).optional(),
   notes: z.string().optional(),
@@ -21,9 +22,9 @@ async function sendMail(d: z.infer<typeof schema>) {
   if (!apiKey) return false;
   const text = [
     `Club: ${d.clubName} (${d.city}, ${d.country})`,
-    `Contact: ${d.contact} — ${d.email} — ${d.phone}`,
+    `Contact: ${d.contact} - ${d.email} - ${d.phone}`,
     `Categories: ${d.categories.join(", ")}`,
-    d.needsAccommodation ? `Accommodation: ${d.rooms ?? 0} rooms × ${d.nights ?? 0} nights` : "Accommodation: no",
+    d.needsAccommodation ? `Accommodation: ${d.hotelChoice ?? "-"} · ${d.rooms ?? 0} rooms × ${d.nights ?? 0} nights` : "Accommodation: no",
     d.notes ? `\nNotes:\n${d.notes}` : "",
   ].join("\n");
   const res = await fetch("https://api.resend.com/emails", {

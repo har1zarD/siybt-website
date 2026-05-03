@@ -9,6 +9,7 @@ export function SiteFooter() {
     ["/tournament", "tournament"],
     ["/schedule", "schedule"],
     ["/venues", "venues"],
+    ["/stay", "stay"],
     ["/family", "family"],
     ["/sponsors", "sponsors"],
     ["/register", "register"],
@@ -21,7 +22,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <div className="text-eyebrow text-[var(--color-snow)]/55">{t("tag")}</div>
-            <h2 className="text-giant mt-6 whitespace-pre-line">{t("title")}</h2>
+            <h2 className="mt-6 whitespace-pre-line font-display leading-[1.04] tracking-[-0.008em] text-[clamp(28px,4.6vw,76px)] [hyphens:none]">{t("title")}</h2>
             <p className="mt-8 max-w-md text-sm text-[var(--color-snow)]/65 leading-relaxed">{t("lead")}</p>
           </div>
 
@@ -61,7 +62,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-[var(--color-snow)]/55 md:flex-row md:items-center md:justify-between">
-          <div>© 2026 — 2027 SIYBT. {t("rights")}</div>
+          <div>© 2026 - 2027 SIYBT. {t("rights")}</div>
           <div className="flex items-center gap-6">
             <Link href="/" className="hover:text-[var(--color-accent)]">{t("privacy")}</Link>
             <Link href="/" className="hover:text-[var(--color-accent)]">{t("terms")}</Link>

@@ -19,8 +19,7 @@ const CELLS: Array<{ k: keyof typeof ICONS; cls: string; tone?: "accent" | "ink"
     k: "venues",
     cls: "md:col-span-7 md:row-span-2",
     tone: "ink",
-    image:
-      "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    image: "/venues/hills1-b.jpg",
   },
   { k: "stream", cls: "md:col-span-5", tone: "paper" },
   { k: "tv", cls: "md:col-span-3", tone: "paper" },
@@ -29,8 +28,7 @@ const CELLS: Array<{ k: keyof typeof ICONS; cls: string; tone?: "accent" | "ink"
     k: "family",
     cls: "md:col-span-5 md:row-span-2",
     tone: "accent",
-    image:
-      "https://images.pexels.com/photos/3755440/pexels-photo-3755440.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    image: "/family-arena.jpg",
   },
   { k: "sponsors", cls: "md:col-span-7", tone: "paper" },
 ];

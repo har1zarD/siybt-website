@@ -1,6 +1,6 @@
-# SIYBT 2027 — Sarajevo International Youth Basketball Tournament
+# SIYBT 2027 - Sarajevo International Youth Basketball Tournament
 
-Production website for SIYBT 2027 (28 — 31 January 2027, Sarajevo).
+Production website for SIYBT 2027 (28 - 31 January 2027, Sarajevo).
 
 ## Stack
 
@@ -18,16 +18,16 @@ Production website for SIYBT 2027 (28 — 31 January 2027, Sarajevo).
 
 Canonical English paths (Bosnian mirror in parentheses):
 
-- `/` — Homepage (`/bs`)
-- `/tournament` — Tournament details (`/bs/turnir`)
-- `/schedule` — Match schedule (`/bs/raspored`)
-- `/venues` — Six venues with map (`/bs/dvorane`)
-- `/teams` — Confirmed teams board (`/bs/ekipe`)
-- `/family` — Family package (`/bs/family`)
-- `/sponsors` — Sponsorship tiers (`/bs/sponzori`)
-- `/media` — Gallery, video, accreditation (`/bs/medija`)
-- `/register` — 4-step club registration (`/bs/prijava`)
-- `/contact` — Contact form + general emails (`/bs/kontakt`)
+- `/` - Homepage (`/bs`)
+- `/tournament` - Tournament details (`/bs/turnir`)
+- `/schedule` - Match schedule (`/bs/raspored`)
+- `/venues` - Six venues with map (`/bs/dvorane`)
+- `/teams` - Confirmed teams board (`/bs/ekipe`)
+- `/family` - Family package (`/bs/family`)
+- `/sponsors` - Sponsorship tiers (`/bs/sponzori`)
+- `/media` - Gallery, video, accreditation (`/bs/medija`)
+- `/register` - 4-step club registration (`/bs/prijava`)
+- `/contact` - Contact form + general emails (`/bs/kontakt`)
 
 ## Local development
 
@@ -50,12 +50,12 @@ Open http://localhost:3000. Admin lives at http://localhost:3000/admin.
 
 Tables managed by Prisma:
 
-- `Registration` — clubs submitting through `/register`
-- `ContactMessage` — inquiries from `/contact`
-- `FamilyBooking` — parent-package requests from `/family`
-- `PressAccreditation` — media applications from `/media`
+- `Registration` - clubs submitting through `/register`
+- `ContactMessage` - inquiries from `/contact`
+- `FamilyBooking` - parent-package requests from `/family`
+- `PressAccreditation` - media applications from `/media`
 
-When `DATABASE_URL` is unset, the API routes still validate and return ok — they just don't persist. The admin dashboard falls back to sample rows so the UI is browsable on a fresh checkout.
+When `DATABASE_URL` is unset, the API routes still validate and return ok - they just don't persist. The admin dashboard falls back to sample rows so the UI is browsable on a fresh checkout.
 
 ## Admin dashboard
 
@@ -63,11 +63,11 @@ When `DATABASE_URL` is unset, the API routes still validate and return ok — th
 
 Pages:
 
-- `/admin` — counts and recent activity
-- `/admin/registrations` — full club registration list
-- `/admin/contact` — inbound contact messages
-- `/admin/family` — family package booking requests
-- `/admin/press` — press accreditation applications
+- `/admin` - counts and recent activity
+- `/admin/registrations` - full club registration list
+- `/admin/contact` - inbound contact messages
+- `/admin/family` - family package booking requests
+- `/admin/press` - press accreditation applications
 
 ## Build
 
@@ -82,16 +82,16 @@ Strings live in `messages/en.json` and `messages/bs.json`. See `messages/README.
 
 ## Assets
 
-- `/public/hero.mp4` — compressed hero loop (sourced from Pexels, 1920px wide, ~2 MB).
-- `/public/hero-poster.jpg` — first-frame poster.
-- `/public/logo.png` — primary brand mark (square, transparent).
-- `/src/app/icon.png` — favicon (Next 16 metadata convention).
-- `/src/app/apple-icon.png` — apple touch icon.
+- `/public/hero.mp4` - compressed hero loop (sourced from Pexels, 1920px wide, ~2 MB).
+- `/public/hero-poster.jpg` - first-frame poster.
+- `/public/logo.png` - primary brand mark (square, transparent).
+- `/src/app/icon.png` - favicon (Next 16 metadata convention).
+- `/src/app/apple-icon.png` - apple touch icon.
 
 ## Environment
 
-- `RESEND_API_KEY` — required for the contact and registration forms to actually send mail. When unset, the API routes accept submissions and return ok with `sent: false` (no mail leaves the box).
-- `NEXT_PUBLIC_SITE_URL` — overrides the canonical site URL in metadata.
+- `RESEND_API_KEY` - required for the contact and registration forms to actually send mail. When unset, the API routes accept submissions and return ok with `sent: false` (no mail leaves the box).
+- `NEXT_PUBLIC_SITE_URL` - overrides the canonical site URL in metadata.
 
 ## Deploy to Vercel
 
