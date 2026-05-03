@@ -8,22 +8,22 @@ import { Reveal } from "@/components/reveal";
 import { Marquee } from "@/components/marquee";
 
 const MARKERS: Array<{ location: [number, number]; size: number }> = [
-  { location: [43.8563, 18.4131], size: 0.12 }, // Sarajevo (host)
-  { location: [45.815, 15.9819], size: 0.06 }, // Zagreb
-  { location: [44.7866, 20.4489], size: 0.06 }, // Beograd
-  { location: [42.4304, 19.2594], size: 0.06 }, // Podgorica
-  { location: [46.0569, 14.5058], size: 0.06 }, // Ljubljana
-  { location: [41.9981, 21.4254], size: 0.06 }, // Skopje
-  { location: [52.52, 13.405], size: 0.06 }, // Berlin
-  { location: [48.2082, 16.3738], size: 0.06 }, // Beč
-  { location: [47.3769, 8.5417], size: 0.06 }, // Zürich
-  { location: [59.3293, 18.0686], size: 0.06 }, // Stockholm
-  { location: [59.9139, 10.7522], size: 0.06 }, // Oslo
-  { location: [55.6761, 12.5683], size: 0.06 }, // Kopenhagen
-  { location: [41.0082, 28.9784], size: 0.06 }, // Istanbul
-  { location: [41.9028, 12.4964], size: 0.06 }, // Rim
-  { location: [48.8566, 2.3522], size: 0.06 }, // Pariz
-  { location: [52.3676, 4.9041], size: 0.06 }, // Amsterdam
+  { location: [43.8563, 18.4131], size: 0.05 }, // Sarajevo (host)
+  { location: [45.815, 15.9819], size: 0.03 }, // Zagreb
+  { location: [44.7866, 20.4489], size: 0.03 }, // Beograd
+  { location: [42.4304, 19.2594], size: 0.03 }, // Podgorica
+  { location: [46.0569, 14.5058], size: 0.03 }, // Ljubljana
+  { location: [41.9981, 21.4254], size: 0.03 }, // Skopje
+  { location: [52.52, 13.405], size: 0.03 }, // Berlin
+  { location: [48.2082, 16.3738], size: 0.03 }, // Beč
+  { location: [47.3769, 8.5417], size: 0.03 }, // Zürich
+  { location: [59.3293, 18.0686], size: 0.03 }, // Stockholm
+  { location: [59.9139, 10.7522], size: 0.03 }, // Oslo
+  { location: [55.6761, 12.5683], size: 0.03 }, // Kopenhagen
+  { location: [41.0082, 28.9784], size: 0.03 }, // Istanbul
+  { location: [41.9028, 12.4964], size: 0.03 }, // Rim
+  { location: [48.8566, 2.3522], size: 0.03 }, // Pariz
+  { location: [52.3676, 4.9041], size: 0.03 }, // Amsterdam
 ];
 
 function GlobeCanvas() {
@@ -32,7 +32,7 @@ function GlobeCanvas() {
   useEffect(() => {
     if (!canvasRef.current) return;
     const canvas = canvasRef.current;
-    let phi = 0;
+    let phi = 4.6;
     let raf = 0;
     const getWidth = () => canvas.offsetWidth;
 
@@ -53,7 +53,7 @@ function GlobeCanvas() {
     });
 
     const tick = () => {
-      phi += 0.004;
+      phi += 0.0015;
       const w = getWidth() * 2;
       globe.update({ phi, width: w, height: w });
       raf = requestAnimationFrame(tick);
