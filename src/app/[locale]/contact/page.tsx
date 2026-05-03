@@ -43,7 +43,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <div className="mt-10 grid gap-3 md:grid-cols-2 text-sm">
             <div>
               <div className="text-eyebrow text-[var(--color-ink)]/55">{t("addressLabel")}</div>
-              <div className="mt-2">SIYBT 2027<br />Hotel Hills Arena<br />Butmirska cesta 18<br />71210 Ilidža, Sarajevo</div>
+              <div className="mt-2">SIYBT 2027<br />Arena Hotel Hills 1<br />Butmirska cesta 18<br />71210 Ilidža, Sarajevo</div>
             </div>
             <div>
               <div className="text-eyebrow text-[var(--color-ink)]/55">{t("hoursLabel")}</div>

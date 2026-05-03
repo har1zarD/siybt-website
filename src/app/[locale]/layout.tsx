@@ -77,7 +77,7 @@ export default async function LocaleLayout({
                 endDate: "2027-01-31T22:00:00+01:00",
                 eventStatus: "https://schema.org/EventScheduled",
                 eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-                location: { "@type": "Place", name: "Hotel Hills Arena", address: { "@type": "PostalAddress", addressLocality: "Sarajevo", addressCountry: "BA" } },
+                location: { "@type": "Place", name: "Arena Hotel Hills 1", address: { "@type": "PostalAddress", addressLocality: "Sarajevo", addressCountry: "BA" } },
                 image: [`${SITE}/og.jpg`],
                 organizer: { "@type": "Organization", name: "SIYBT", url: SITE },
                 sport: "Basketball",

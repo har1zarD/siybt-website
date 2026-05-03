@@ -9,12 +9,13 @@ export const TOURNAMENT_START = new Date("2027-01-28T09:00:00+01:00");
 
 export type Venue = { name: string; area: string; capacity: number; primary?: boolean };
 export const VENUES: ReadonlyArray<Venue> = [
-  { name: "Hotel Hills Arena", area: "Ilidža", capacity: 3200, primary: true },
+  { name: "Arena Hotel Hills 1", area: "Ilidža", capacity: 3200, primary: true },
+  { name: "Hotel Hills 2", area: "Ilidža", capacity: 1400 },
+  { name: "Hotel Hills 3", area: "Ilidža", capacity: 1100 },
   { name: "KSC Ilidža", area: "Ilidža", capacity: 1800 },
-  { name: "Dvorana Hrasnica", area: "Hrasnica", capacity: 1200 },
-  { name: "Malak Regency Hall", area: "Centar", capacity: 900 },
-  { name: "Dvorana Ramiz Salčin", area: "Mojmilo", capacity: 2400 },
-  { name: "Skenderija Mala", area: "Centar", capacity: 1500 },
+  { name: "Dvorana Hrasnica 1", area: "Hrasnica", capacity: 1200 },
+  { name: "Dvorana Hrasnica 2", area: "Hrasnica", capacity: 900 },
+  { name: "Malak Regency", area: "Centar", capacity: 900 },
 ];
 
 export const CATEGORIES = [

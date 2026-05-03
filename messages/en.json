@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "SIYBT 2027 — Sarajevo International Youth Basketball Tournament",
-    "description": "28–31 January 2027. Sarajevo becomes the epicenter of youth basketball. 70 teams, 8 categories, 16 countries, 6 venues."
+    "description": "28–31 January 2027. Sarajevo becomes the epicenter of youth basketball. 70 teams, 8 categories, 16 countries, 7 venues."
   },
   "nav": {
     "tournament": "Tournament",
@@ -40,7 +40,7 @@
     "ctaGhost": "View the schedule"
   },
   "marquee": {
-    "items": ["U12", "U14", "U16", "U18", "BOYS", "GIRLS", "6 VENUES", "70 TEAMS", "16 COUNTRIES", "SARAJEVO 2027"]
+    "items": ["U12", "U14", "U16", "U18", "BOYS", "GIRLS", "7 VENUES", "70 TEAMS", "16 COUNTRIES", "SARAJEVO 2027"]
   },
   "about": {
     "eyebrow": "About the tournament",
@@ -59,7 +59,7 @@
     "eyebrow": "What we deliver",
     "title": "Built like a senior tournament.",
     "items": {
-      "venues": { "title": "Premium venues", "body": "Six certified arenas across Sarajevo, anchored by Hotel Hills Arena." },
+      "venues": { "title": "Premium venues", "body": "Seven certified arenas across Sarajevo, anchored by Arena Hotel Hills 1." },
       "stream": { "title": "Live stream", "body": "Every court streamed in HD. Family at home never misses a quarter." },
       "tv": { "title": "TV production", "body": "Multi-camera production for finals, with broadcast-ready highlight reels." },
       "hotel": { "title": "Hotel package", "body": "Curated club housing with shuttles to every venue." },
@@ -73,7 +73,7 @@
     "drag": "Drag · Scroll"
   },
   "venuesSection": {
-    "eyebrow": "Six venues. One city.",
+    "eyebrow": "Seven venues. One city.",
     "title": "Sarajevo, court by court.",
     "subtitle": "From Ilidža to the city centre — every game inside a 20-minute radius."
   },
@@ -156,7 +156,7 @@
   },
   "venuesPage": {
     "title": "Venues",
-    "lead": "Six certified arenas across Sarajevo. Every game within a 20-minute radius.",
+    "lead": "Seven certified arenas across Sarajevo. Every game within a 20-minute radius.",
     "capacity": "Capacity",
     "primary": "Main venue",
     "address": "Address",
@@ -164,7 +164,7 @@
     "parkingValue": "On-site for delegations",
     "transit": "Transit",
     "transitValue": "Tram + bus connection",
-    "mapNote": "Sarajevo · 6 venues · 20-minute radius"
+    "mapNote": "Sarajevo · 7 venues · 20-minute radius"
   },
   "family": {
     "title": "Family package",
@@ -218,7 +218,7 @@
       "bronze": "Court partner"
     },
     "tierBodies": {
-      "gold": "Title status across all venues, full broadcast presence, named centre court at Hotel Hills Arena, brand integration in the opening and closing ceremonies, premium hospitality.",
+      "gold": "Title status across all venues, full broadcast presence, named centre court at Arena Hotel Hills 1, brand integration in the opening and closing ceremonies, premium hospitality.",
       "silver": "On-court LED rotation, branded zones in two venues, broadcast inserts, hospitality for senior partners and on-site activation space.",
       "bronze": "Court-side signage in one venue, partner mention in broadcast graphics, partner badge across digital channels and event entry tickets."
     },
@@ -321,7 +321,7 @@
   "footer": {
     "tag": "Sarajevo · 28 — 31 January 2027",
     "title": "Sarajevo\nInternational\nYouth Basketball.",
-    "lead": "70 teams. 16 countries. 6 venues. Four days that turn Sarajevo into the epicenter of youth basketball.",
+    "lead": "70 teams. 16 countries. 7 venues. Four days that turn Sarajevo into the epicenter of youth basketball.",
     "navHeading": "Navigate",
     "contactHeading": "Contact",
     "followHeading": "Follow",

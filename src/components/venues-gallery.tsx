@@ -7,7 +7,7 @@ import { VENUES, type Venue } from "@/lib/utils";
 import { ChevronLeft, ChevronRight, MapPin, Train, Car } from "lucide-react";
 import Image from "next/image";
 
-// Hotel Hills Arena, KSC Ilidža, Dvorana Hrasnica, Malak Regency, Ramiz Salčin, Skenderija (last has real Wikimedia photo)
+// Arena Hotel Hills 1, Hotel Hills 2, Hotel Hills 3, KSC Ilidža, Dvorana Hrasnica 1, Dvorana Hrasnica 2, Malak Regency
 const VENUE_PHOTOS = [
   [
     "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -35,10 +35,14 @@ const VENUE_PHOTOS = [
     "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=1600",
   ],
   [
-    // Skenderija — actual Wikimedia Commons photographs of the Sarajevo cultural-sports centre
-    "https://upload.wikimedia.org/wikipedia/commons/9/99/Sarajevo_-_Centar_Skenderija_%2849122480967%29.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/2/2f/Sarajevo_-_Centar_Skenderija_%2849121791218%29.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/d/d6/Sarajevo_-_Centar_Skenderija_%2849122291986%29.jpg",
+    "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/2304478/pexels-photo-2304478.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  ],
+  [
+    "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1600",
   ],
 ];
 
@@ -59,7 +63,7 @@ export function VenuesGallery() {
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/60 to-transparent" />
           {/* simulated pins */}
           {[
-            [22, 60], [38, 52], [48, 68], [58, 44], [70, 56], [82, 48],
+            [22, 60], [28, 54], [34, 50], [42, 64], [56, 70], [64, 66], [82, 48],
           ].map(([x, y], i) => (
             <span key={i} className="absolute -translate-x-1/2 -translate-y-full" style={{ left: `${x}%`, top: `${y}%` }}>
               <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--color-accent)] text-[10px] font-mono text-[var(--color-snow)] shadow-[0_0_0_5px_rgba(255,90,31,0.18)]">
@@ -105,7 +109,7 @@ function VenueRow({ index, venue, photos }: { index: number; venue: Venue; photo
             </div>
           </div>
           <div className="absolute inset-x-4 bottom-4 flex items-center justify-between">
-            <div className="font-mono text-[10px] tracking-[0.22em] text-[var(--color-snow)]/85">0{index + 1} / 06</div>
+            <div className="font-mono text-[10px] tracking-[0.22em] text-[var(--color-snow)]/85">0{index + 1} / 07</div>
             <div className="flex gap-2">
               <button onClick={() => api?.scrollPrev()} aria-label="prev" className="grid h-9 w-9 place-items-center rounded-[var(--radius-sm)] bg-[var(--color-snow)] text-[var(--color-ink)]"><ChevronLeft className="h-4 w-4" /></button>
               <button onClick={() => api?.scrollNext()} aria-label="next" className="grid h-9 w-9 place-items-center rounded-[var(--radius-sm)] bg-[var(--color-snow)] text-[var(--color-ink)]"><ChevronRight className="h-4 w-4" /></button>

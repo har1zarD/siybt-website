@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "SIYBT 2027 — Sarajevo International Youth Basketball Tournament",
-    "description": "28–31. januar 2027. Sarajevo postaje epicentar omladinske košarke. 70 ekipa, 8 kategorija, 16 zemalja, 6 dvorana."
+    "description": "28–31. januar 2027. Sarajevo postaje epicentar omladinske košarke. 70 ekipa, 8 kategorija, 16 zemalja, 7 dvorana."
   },
   "nav": {
     "tournament": "Turnir",
@@ -45,7 +45,7 @@
   "about": {
     "eyebrow": "O turniru",
     "title": "Kontinentalni razmjer. Sarajevska preciznost.",
-    "p1": "Sarajevo International Youth Basketball Tournament okuplja najjače omladinske programe iz BiH dijaspore, regije i šire Evrope kroz četiri dana takmičenja u šest vrhunskih sarajevskih dvorana.",
+    "p1": "Sarajevo International Youth Basketball Tournament okuplja najjače omladinske programe iz BiH dijaspore, regije i šire Evrope kroz četiri dana takmičenja u sedam vrhunskih sarajevskih dvorana.",
     "p2": "Misija je stvoriti susretište gdje mladi sportisti prvi put upoznaju Sarajevo, a Sarajevo prima najtalentovaniju omladinsku košarkašku generaciju Balkana.",
     "p3": "Iza turnira stoji organizacijski odbor sa decenijama zajedničkog iskustva u sportu, košarkaškoj operativi i produkciji eventova velikog formata."
   },
@@ -59,7 +59,7 @@
     "eyebrow": "Šta nudimo",
     "title": "Standard ozbiljnog turnira.",
     "items": {
-      "venues": { "title": "Vrhunske dvorane", "body": "Šest certificiranih dvorana u Sarajevu, sa Hotel Hills Arenom kao centralnom." },
+      "venues": { "title": "Vrhunske dvorane", "body": "Sedam certificiranih dvorana u Sarajevu, sa Arenom Hotel Hills 1 kao centralnom." },
       "stream": { "title": "Live stream", "body": "Svaki teren u HD prijenosu. Porodica kod kuće ne propušta nijednu četvrtinu." },
       "tv": { "title": "TV produkcija", "body": "Multi-kamera produkcija za finala, sa highlight materijalima spremnim za broadcast." },
       "hotel": { "title": "Hotelski paket", "body": "Pažljivo odabran smještaj sa shuttle prijevozom do svih dvorana." },
@@ -73,7 +73,7 @@
     "drag": "Povuci · Skrolaj"
   },
   "venuesSection": {
-    "eyebrow": "Šest dvorana. Jedan grad.",
+    "eyebrow": "Sedam dvorana. Jedan grad.",
     "title": "Sarajevo, teren po teren.",
     "subtitle": "Od Ilidže do centra — svaka utakmica unutar 20 minuta vožnje."
   },
@@ -95,7 +95,7 @@
   },
   "tournament": {
     "title": "Turnir",
-    "lead": "Četiri dana košarke, osam kategorija, šest dvorana širom Sarajeva.",
+    "lead": "Četiri dana košarke, osam kategorija, sedam dvorana širom Sarajeva.",
     "dates": "28 — 31. januar 2027",
     "countdownLabel": "Tip-off za",
     "categoriesEyebrow": "Kategorije",
@@ -156,7 +156,7 @@
   },
   "venuesPage": {
     "title": "Dvorane",
-    "lead": "Šest certificiranih dvorana u Sarajevu. Svaka utakmica unutar 20 minuta vožnje.",
+    "lead": "Sedam certificiranih dvorana u Sarajevu. Svaka utakmica unutar 20 minuta vožnje.",
     "capacity": "Kapacitet",
     "primary": "Centralna dvorana",
     "address": "Adresa",
@@ -164,7 +164,7 @@
     "parkingValue": "Na lokaciji za delegacije",
     "transit": "Prevoz",
     "transitValue": "Tramvaj + autobus",
-    "mapNote": "Sarajevo · 6 dvorana · 20 minuta radius"
+    "mapNote": "Sarajevo · 7 dvorana · 20 minuta radius"
   },
   "family": {
     "title": "Family paket",
@@ -178,7 +178,7 @@
     "includesBody": "Sa hotelima, prijevoznicima i dvoranama smo pripremili jedan paket koji uklanja logistiku iz porodičnog vikenda u Sarajevu.",
     "list": [
       "Hotelska noć sa doručkom u partner hotelu",
-      "Dnevni shuttle do svih šest dvorana",
+      "Dnevni shuttle do svih sedam dvorana",
       "Rezervisana sjedišta za porodice u dvoranama",
       "Gradski program u subotu navečer",
       "Welcome kit po dolasku"
@@ -218,14 +218,14 @@
       "bronze": "Court partner"
     },
     "tierBodies": {
-      "gold": "Title status u svim dvoranama, puna prisutnost u broadcastu, imenovani centralni teren u Hotel Hills Areni, brand integracija u svečanostima otvaranja i zatvaranja, premium hospitality.",
+      "gold": "Title status u svim dvoranama, puna prisutnost u broadcastu, imenovani centralni teren u Areni Hotel Hills 1, brand integracija u svečanostima otvaranja i zatvaranja, premium hospitality.",
       "silver": "LED rotacija na terenu, brendirane zone u dvije dvorane, broadcast inserti, hospitality za starije partnere i prostor za on-site aktivaciju.",
       "bronze": "Court-side signalizacija u jednoj dvorani, partner pomen u broadcast grafikama, partner badge na digitalnim kanalima i ulaznice."
     },
     "perEdition": "izdanje",
     "whyEyebrow": "Zašto partner",
     "whyTitle": "Turnir s pravom publikom.",
-    "whyBody": "Četiri dana, šest dvorana, osam kategorija. Turnir doseže porodice širom Bosne, regije i dijaspore — i u dvoranama i kroz multi-court live stream.",
+    "whyBody": "Četiri dana, sedam dvorana, osam kategorija. Turnir doseže porodice širom Bosne, regije i dijaspore — i u dvoranama i kroz multi-court live stream.",
     "benefits": {
       "reach": { "title": "Doseg", "body": "840 sportista, porodica i košarkaških profesionalaca uživo, plus oko 60.000 stream gledalaca." },
       "broadcast": { "title": "Broadcast", "body": "TV-grade produkcija za finala sa distribucijom kroz regionalne emitere." },
@@ -239,9 +239,9 @@
   },
   "media": {
     "title": "Medija",
-    "lead": "Fotografije, video i live prijenos sa svih šest terena.",
+    "lead": "Fotografije, video i live prijenos sa svih sedam terena.",
     "stream": "Live stream",
-    "streamTitle": "Svih šest terena. Jedan feed.",
+    "streamTitle": "Svih sedam terena. Jedan feed.",
     "soon": "Live prijenos kreće prvog dana takmičenja.",
     "playReel": "Pusti reel",
     "reel": {
@@ -321,7 +321,7 @@
   "footer": {
     "tag": "Sarajevo · 28 — 31. januar 2027",
     "title": "Sarajevo\nInternational\nYouth Basketball.",
-    "lead": "70 ekipa. 16 zemalja. 6 dvorana. Četiri dana koja Sarajevo pretvaraju u epicentar omladinske košarke.",
+    "lead": "70 ekipa. 16 zemalja. 7 dvorana. Četiri dana koja Sarajevo pretvaraju u epicentar omladinske košarke.",
     "navHeading": "Navigacija",
     "contactHeading": "Kontakt",
     "followHeading": "Pratite",

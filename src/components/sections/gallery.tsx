@@ -7,11 +7,11 @@ import { Marquee } from "@/components/marquee";
 
 const SHOTS = [
   { src: "https://images.pexels.com/photos/2304478/pexels-photo-2304478.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Layup attack", tag: "Quarterfinal", aspect: "4/5" },
-  { src: "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Crowd cheering", tag: "Hotel Hills Arena", aspect: "1/1" },
+  { src: "https://images.pexels.com/photos/1080884/pexels-photo-1080884.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Crowd cheering", tag: "Arena Hotel Hills 1", aspect: "1/1" },
   { src: "https://images.pexels.com/photos/2961948/pexels-photo-2961948.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Three-point shot", tag: "U16 final", aspect: "4/5" },
   { src: "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Coach huddle", tag: "Time-out", aspect: "1/1" },
   { src: "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Fast break", tag: "Group stage", aspect: "4/5" },
-  { src: "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Defensive press", tag: "Skenderija", aspect: "1/1" },
+  { src: "https://images.pexels.com/photos/2961961/pexels-photo-2961961.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Defensive press", tag: "Malak Regency", aspect: "1/1" },
   { src: "https://images.pexels.com/photos/2834914/pexels-photo-2834914.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Trophy ceremony", tag: "Awards", aspect: "4/5" },
   { src: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1600", alt: "Bench reaction", tag: "Final 4", aspect: "1/1" },
 ];
