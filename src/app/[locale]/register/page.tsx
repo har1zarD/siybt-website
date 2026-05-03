@@ -16,7 +16,7 @@ export default async function RegisterPage({ params }: { params: Promise<{ local
   const nav = await getTranslations("nav");
   return (
     <>
-      <PageHero eyebrow={nav("register")} title={t("title")} lead={t("lead")} meta="04 / STEPS" />
+      <PageHero eyebrow={nav("register")} title={t("title")} lead={t("lead")} meta="04 / STEPS" variant="register" index={8} />
       <RegisterWizard />
     </>
   );

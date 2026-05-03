@@ -16,7 +16,7 @@ export default async function VenuesPage({ params }: { params: Promise<{ locale:
   const nav = await getTranslations("nav");
   return (
     <>
-      <PageHero eyebrow={nav("venues")} title={t("title")} lead={t("lead")} meta="6 / 06" />
+      <PageHero eyebrow={nav("venues")} title={t("title")} lead={t("lead")} meta="6 / 06" variant="venues" index={3} />
       <VenuesGallery />
     </>
   );

@@ -23,7 +23,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <PageHero eyebrow={nav("contact")} title={t("title")} lead={t("lead")} />
+      <PageHero eyebrow={nav("contact")} title={t("title")} lead={t("lead")} variant="contact" index={9} />
 
       <section className="container-edge mx-auto py-16 md:py-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">

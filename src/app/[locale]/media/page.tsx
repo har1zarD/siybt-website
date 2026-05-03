@@ -30,7 +30,7 @@ export default async function MediaPage({ params }: { params: Promise<{ locale: 
 
   return (
     <>
-      <PageHero eyebrow={nav("media")} title={t("title")} lead={t("lead")} />
+      <PageHero eyebrow={nav("media")} title={t("title")} lead={t("lead")} variant="media" index={7} />
 
       {/* livestream */}
       <section className="container-edge mx-auto pt-16">

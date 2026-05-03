@@ -330,5 +330,16 @@
     "terms": "Terms",
     "madeIn": "Built with care in Sarajevo."
   },
-  "languageSwitcher": { "label": "Language" }
+  "languageSwitcher": { "label": "Language" },
+  "galleryHome": {
+    "eyebrow": "From the floor",
+    "title": "Frames from the tournament.",
+    "subtitle": "Selected stills from previous training camps and friendlies — a preview of what 2027 will look like inside the arenas.",
+    "creditPhotography": "Photography",
+    "creditCamera": "Multi-camera",
+    "creditVenue": "Venue stills",
+    "creditAction": "Action shots",
+    "creditCrowd": "Crowd",
+    "creditAward": "Trophy room"
+  }
 }

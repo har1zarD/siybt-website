@@ -31,6 +31,8 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
         title={t("title")}
         lead={t("lead")}
         meta={t("dates")}
+        variant="tournament"
+        index={1}
       />
 
       {/* big countdown block */}

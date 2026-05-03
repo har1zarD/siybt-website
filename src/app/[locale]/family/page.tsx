@@ -22,7 +22,7 @@ export default async function FamilyPage({ params }: { params: Promise<{ locale:
 
   return (
     <>
-      <PageHero eyebrow={nav("family")} title={t("title")} lead={t("lead")} meta={t("price")} />
+      <PageHero eyebrow={nav("family")} title={t("title")} lead={t("lead")} meta={t("price")} variant="family" index={5} />
 
       {/* winter hero image strip */}
       <section className="container-edge mx-auto pt-16">

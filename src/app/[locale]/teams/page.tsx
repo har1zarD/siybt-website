@@ -16,7 +16,7 @@ export default async function TeamsPage({ params }: { params: Promise<{ locale: 
   const nav = await getTranslations("nav");
   return (
     <>
-      <PageHero eyebrow={nav("teams")} title={t("title")} lead={t("lead")} meta="52 / 70" />
+      <PageHero eyebrow={nav("teams")} title={t("title")} lead={t("lead")} meta="52 / 70" variant="teams" index={4} />
       <TeamsBoard />
     </>
   );

@@ -33,7 +33,7 @@ export default async function SponsorsPage({ params }: { params: Promise<{ local
 
   return (
     <>
-      <PageHero eyebrow={nav("sponsors")} title={t("title")} lead={t("lead")} meta={t("countMeta")} />
+      <PageHero eyebrow={nav("sponsors")} title={t("title")} lead={t("lead")} meta={t("countMeta")} variant="sponsors" index={6} />
 
       <section className="container-edge mx-auto py-24 md:py-32 space-y-16">
         {tiers.map(({ k, price, logos }) => (

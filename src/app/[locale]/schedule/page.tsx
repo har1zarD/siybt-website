@@ -17,7 +17,7 @@ export default async function SchedulePage({ params }: { params: Promise<{ local
 
   return (
     <>
-      <PageHero eyebrow={nav("schedule")} title={t("title")} lead={t("lead")} meta={t("tip")} />
+      <PageHero eyebrow={nav("schedule")} title={t("title")} lead={t("lead")} meta={t("tip")} variant="schedule" index={2} />
       <ScheduleBoard />
     </>
   );

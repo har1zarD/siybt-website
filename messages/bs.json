@@ -330,5 +330,16 @@
     "terms": "Uslovi",
     "madeIn": "Napravljeno s pažnjom u Sarajevu."
   },
-  "languageSwitcher": { "label": "Jezik" }
+  "languageSwitcher": { "label": "Jezik" },
+  "galleryHome": {
+    "eyebrow": "Sa parketa",
+    "title": "Kadrovi sa turnira.",
+    "subtitle": "Izabrani trenuci sa prethodnih kampova i prijateljskih utakmica — najava onoga što čeka dvorane u 2027.",
+    "creditPhotography": "Fotografija",
+    "creditCamera": "Multi-kamera",
+    "creditVenue": "Kadrovi dvorana",
+    "creditAction": "Akcije",
+    "creditCrowd": "Publika",
+    "creditAward": "Trofeji"
+  }
 }
