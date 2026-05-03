@@ -1,21 +1,39 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 const v: Variants = {
   hidden: { opacity: 0, y: 36 },
   show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } },
 };
 
+const vLight: Variants = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 0.4, ease: "easeOut" } },
+};
+
+function useLightMotion() {
+  const [light, setLight] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(pointer: coarse), (prefers-reduced-motion: reduce), (max-width: 767px)");
+    const update = () => setLight(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+  return light;
+}
+
 export function Reveal({ children, delay = 0, className }: { children: ReactNode; delay?: number; className?: string }) {
+  const light = useLightMotion();
   return (
     <motion.div
-      variants={v}
+      variants={light ? vLight : v}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
-      transition={{ delay }}
+      transition={{ delay: light ? 0 : delay }}
       className={className}
     >
       {children}
@@ -24,12 +42,13 @@ export function Reveal({ children, delay = 0, className }: { children: ReactNode
 }
 
 export function RevealStagger({ children, className, gap = 0.06 }: { children: ReactNode; className?: string; gap?: number }) {
+  const light = useLightMotion();
   return (
     <motion.div
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-10% 0px" }}
-      variants={{ hidden: {}, show: { transition: { staggerChildren: gap } } }}
+      variants={{ hidden: {}, show: { transition: { staggerChildren: light ? 0 : gap } } }}
       className={className}
     >
       {children}
@@ -38,8 +57,9 @@ export function RevealStagger({ children, className, gap = 0.06 }: { children: R
 }
 
 export function RevealItem({ children, className }: { children: ReactNode; className?: string }) {
+  const light = useLightMotion();
   return (
-    <motion.div variants={v} className={className}>
+    <motion.div variants={light ? vLight : v} className={className}>
       {children}
     </motion.div>
   );

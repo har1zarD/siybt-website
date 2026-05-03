@@ -9,7 +9,7 @@ export const TOURNAMENT_START = new Date("2027-01-28T09:00:00+01:00");
 
 export type Venue = { name: string; area: string; capacity: number; primary?: boolean; lat: number; lng: number };
 export const VENUES: ReadonlyArray<Venue> = [
-  { name: "Arena Hotel Hills 1", area: "Ilidža", capacity: 3200, primary: true, lat: 43.82430, lng: 18.31790 },
+  { name: "Arena Hotel Hills 1", area: "Ilidža", capacity: 3200, lat: 43.82430, lng: 18.31790 },
   { name: "Hotel Hills 2", area: "Ilidža", capacity: 1400, lat: 43.82460, lng: 18.31760 },
   { name: "Hotel Hills 3", area: "Ilidža", capacity: 1100, lat: 43.82410, lng: 18.31820 },
   { name: "KSC Ilidža", area: "Ilidža", capacity: 1800, lat: 43.82780, lng: 18.31220 },
