@@ -43,7 +43,7 @@ export function VenuesPreview() {
                       <div className="mt-1 text-xs text-[var(--color-ink)]/55 uppercase tracking-wider">{venue.area}</div>
                     </div>
                     <div className="col-span-3 text-right font-mono text-sm tabular-nums">
-                      {venue.capacity.toLocaleString("bs-BA")} <span className="text-xs text-[var(--color-ink)]/55">{v("capacity").toLowerCase()}</span>
+                      {venue.capacity.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} <span className="text-xs text-[var(--color-ink)]/55">{v("capacity").toLowerCase()}</span>
                     </div>
                     <div className="col-span-1 text-right">
                       {venue.primary ? (

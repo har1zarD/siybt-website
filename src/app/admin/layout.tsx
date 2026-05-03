@@ -18,9 +18,7 @@ const NAV = [
 ] as const;
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
-  const auth = await requireAdmin();
-  if (!auth.ok) return auth.response as unknown as React.ReactElement;
-
+  // Auth is enforced upstream in src/proxy.ts (HTTP Basic).
   return (
     <html lang="en" className={`${sans.variable} ${display.variable} ${mono.variable}`}>
       <body className="min-h-svh bg-[var(--color-paper)] text-[var(--color-ink)]">

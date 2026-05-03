@@ -42,7 +42,7 @@ export function TeamsGlobe() {
                 <span
                   key={c}
                   className="absolute -translate-x-1/2 -translate-y-1/2"
-                  style={{ left: `${x}%`, top: `${y}%` }}
+                  style={{ left: `${x.toFixed(4)}%`, top: `${y.toFixed(4)}%` }}
                 >
                   <span className="block h-2 w-2 rounded-full bg-[var(--color-accent)] shadow-[0_0_0_4px_rgba(255,90,31,0.18)]" />
                 </span>

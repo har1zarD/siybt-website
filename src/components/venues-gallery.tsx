@@ -120,7 +120,7 @@ function VenueRow({ index, venue, photos }: { index: number; venue: Venue; photo
         <h3 className="mt-4 text-big text-[var(--color-ink)]">{venue.name}</h3>
         <dl className="mt-8 divide-y divide-[var(--color-line-strong)] border-y border-[var(--color-line-strong)] text-sm">
           <Row k={<span className="inline-flex items-center gap-2"><MapPin className="h-3.5 w-3.5" /> {t("address")}</span>} v={`${venue.area}, Sarajevo`} />
-          <Row k={t("capacity")} v={`${venue.capacity.toLocaleString("bs-BA")}`} />
+          <Row k={t("capacity")} v={venue.capacity.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} />
           <Row k={<span className="inline-flex items-center gap-2"><Car className="h-3.5 w-3.5" /> {t("parking")}</span>} v={t("parkingValue")} />
           <Row k={<span className="inline-flex items-center gap-2"><Train className="h-3.5 w-3.5" /> {t("transit")}</span>} v={t("transitValue")} />
         </dl>
