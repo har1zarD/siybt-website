@@ -68,8 +68,8 @@ export function Hero() {
 
         <div className="flex flex-col gap-10">
           <h1 className="text-mega text-[var(--color-snow)]">
-            <span className="block"><SplitWord text={t("line1")} immediate /></span>
-            <span className="block text-[var(--color-accent)]"><SplitWord text={t("line2")} immediate /></span>
+            <span className="block"><SplitWord text={t("line1")} /></span>
+            <span className="block text-[var(--color-accent)]"><SplitWord text={t("line2")} /></span>
           </h1>
 
           <div className="grid gap-12 lg:grid-cols-12 lg:items-end">

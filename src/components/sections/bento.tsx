@@ -14,12 +14,24 @@ const ICONS = {
   sponsors: Handshake,
 } as const;
 
-const CELLS: Array<{ k: keyof typeof ICONS; cls: string; tone?: "accent" | "ink" | "paper" }> = [
-  { k: "venues", cls: "md:col-span-7 md:row-span-2", tone: "ink" },
+const CELLS: Array<{ k: keyof typeof ICONS; cls: string; tone?: "accent" | "ink" | "paper"; image?: string }> = [
+  {
+    k: "venues",
+    cls: "md:col-span-7 md:row-span-2",
+    tone: "ink",
+    image:
+      "https://images.pexels.com/photos/2277981/pexels-photo-2277981.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
   { k: "stream", cls: "md:col-span-5", tone: "paper" },
   { k: "tv", cls: "md:col-span-3", tone: "paper" },
   { k: "hotel", cls: "md:col-span-2", tone: "paper" },
-  { k: "family", cls: "md:col-span-5 md:row-span-2", tone: "accent" },
+  {
+    k: "family",
+    cls: "md:col-span-5 md:row-span-2",
+    tone: "accent",
+    image:
+      "https://images.pexels.com/photos/3755440/pexels-photo-3755440.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  },
   { k: "sponsors", cls: "md:col-span-7", tone: "paper" },
 ];
 
@@ -37,7 +49,7 @@ export function Bento() {
       </div>
 
       <RevealStagger className="mt-16 grid auto-rows-[180px] grid-cols-1 gap-3 md:grid-cols-12 md:auto-rows-[160px]">
-        {CELLS.map(({ k, cls, tone }) => {
+        {CELLS.map(({ k, cls, tone, image }) => {
           const Icon = ICONS[k];
           const toneCls =
             tone === "accent"
@@ -53,7 +65,25 @@ export function Bento() {
                   toneCls
                 )}
               >
-                <div className="flex h-full flex-col justify-between">
+                {image ? (
+                  <>
+                    <div
+                      aria-hidden
+                      className="absolute inset-0 bg-cover bg-center opacity-55 transition-opacity duration-700 group-hover:opacity-70"
+                      style={{ backgroundImage: `url(${image})` }}
+                    />
+                    <div
+                      aria-hidden
+                      className={cn(
+                        "absolute inset-0",
+                        tone === "accent"
+                          ? "bg-gradient-to-t from-[var(--color-accent)] via-[var(--color-accent)]/70 to-[var(--color-accent)]/30"
+                          : "bg-gradient-to-t from-[var(--color-ink)] via-[var(--color-ink)]/70 to-[var(--color-ink)]/20"
+                      )}
+                    />
+                  </>
+                ) : null}
+                <div className="relative flex h-full flex-col justify-between">
                   <Icon className="h-6 w-6 opacity-80" />
                   <div>
                     <h3 className="text-2xl md:text-3xl font-display tracking-tight">{t(`items.${k}.title`)}</h3>
