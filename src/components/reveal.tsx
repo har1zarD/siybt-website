@@ -45,16 +45,21 @@ export function RevealItem({ children, className }: { children: ReactNode; class
   );
 }
 
-export function SplitWord({ text, className }: { text: string; className?: string }) {
+export function SplitWord({ text, className, immediate = false }: { text: string; className?: string; immediate?: boolean }) {
   const words = text.split(" ");
+  const motionProps = immediate
+    ? { initial: { y: "110%" }, animate: { y: "0%" } }
+    : {
+        initial: { y: "110%" },
+        whileInView: { y: "0%" },
+        viewport: { once: true, margin: "-10% 0px" } as const,
+      };
   return (
     <span className={className}>
       {words.map((w, i) => (
         <span key={i} className="inline-block overflow-hidden align-bottom mr-[0.22em] last:mr-0">
           <motion.span
-            initial={{ y: "110%" }}
-            whileInView={{ y: "0%" }}
-            viewport={{ once: true, margin: "-10% 0px" }}
+            {...motionProps}
             transition={{ duration: 0.95, ease: [0.65, 0, 0.05, 1], delay: i * 0.05 }}
             className="inline-block"
           >
