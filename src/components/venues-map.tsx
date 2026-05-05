@@ -81,7 +81,7 @@ export function VenuesMap() {
           font-family: var(--font-mono);
           font-size: 11px;
           font-weight: 600;
-          box-shadow: 0 0 0 5px rgba(255, 90, 31, 0.18), 0 4px 14px rgba(0,0,0,0.35);
+          box-shadow: 0 0 0 5px rgba(244, 180, 28, 0.18), 0 4px 14px rgba(0,0,0,0.35);
         }
         .siybt-pin .pin-num { line-height: 1; }
         .siybt-popup { font-family: var(--font-sans); min-width: 200px; }

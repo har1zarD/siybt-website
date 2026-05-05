@@ -365,7 +365,7 @@ function StepCategories() {
                 className={cn(
                   "group relative flex h-full cursor-pointer flex-col gap-2 rounded-[var(--radius-md)] border p-4 transition-all",
                   isOn
-                    ? "border-[var(--color-accent)] bg-[var(--color-accent)]/8 shadow-[0_4px_18px_-10px_rgba(255,90,31,0.45)]"
+                    ? "border-[var(--color-accent)] bg-[var(--color-accent)]/8 shadow-[0_4px_18px_-10px_rgba(244,180,28,0.45)]"
                     : "border-[var(--color-line-strong)] bg-[var(--color-paper)]/40 hover:-translate-y-0.5 hover:border-[var(--color-ink)]"
                 )}
               >
@@ -421,7 +421,7 @@ function StepAccommodation() {
                 className={cn(
                   "group relative overflow-hidden rounded-[var(--radius-md)] border bg-[var(--color-paper)]/40 text-left transition-all hover:-translate-y-0.5",
                   active
-                    ? "border-[var(--color-accent)] ring-2 ring-[var(--color-accent)]/30 shadow-[0_8px_32px_-12px_rgba(255,90,31,0.4)]"
+                    ? "border-[var(--color-accent)] ring-2 ring-[var(--color-accent)]/30 shadow-[0_8px_32px_-12px_rgba(244,180,28,0.4)]"
                     : "border-[var(--color-line-strong)] hover:border-[var(--color-ink)]"
                 )}
               >
@@ -601,7 +601,7 @@ function SuccessScreen({ data }: { data: FormData }) {
           initial={{ scale: 0.85, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[var(--color-accent)] text-[var(--color-snow)] shadow-[0_8px_24px_-8px_rgba(255,90,31,0.6)]"
+          className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-[var(--color-accent)] text-[var(--color-snow)] shadow-[0_8px_24px_-8px_rgba(244,180,28,0.6)]"
         >
           <Check className="h-6 w-6" strokeWidth={2.5} />
         </motion.div>

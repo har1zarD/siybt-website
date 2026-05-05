@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter_Tight, Anton, JetBrains_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -42,8 +42,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       canonical: locale === "en" ? "/" : `/${locale}`,
       languages: { en: "/", bs: "/bs" },
     },
+    manifest: "/manifest.webmanifest",
   };
 }
+
+export const viewport: Viewport = {
+  themeColor: "#f4b41c",
+};
 
 export default async function LocaleLayout({
   children,

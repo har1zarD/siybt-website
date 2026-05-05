@@ -74,7 +74,7 @@ export function PageHero({
         background: "linear-gradient(135deg, rgba(14,42,68,0.55), rgba(7,24,43,0.2) 60%, rgba(5,6,8,0))",
       }} />
       <div aria-hidden className="absolute inset-0 -z-10" style={{
-        background: "radial-gradient(60% 50% at 90% 10%, rgba(255,90,31,0.18), transparent 65%)",
+        background: "radial-gradient(60% 50% at 90% 10%, rgba(244,180,28,0.18), transparent 65%)",
       }} />
       <div aria-hidden className="absolute inset-0 -z-10 grid-court opacity-[0.07]" />
       <div aria-hidden className="absolute inset-0 -z-10 grain" />

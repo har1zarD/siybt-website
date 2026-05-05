@@ -109,7 +109,7 @@ export function CustomCursor() {
           top: mode === "hover" ? -18 : -7,
           opacity: mode === "hover" ? 1 : 0,
           backgroundColor: "var(--color-accent)",
-          boxShadow: "0 6px 18px -4px rgba(255,90,31,0.55)",
+          boxShadow: "0 6px 18px -4px rgba(244,180,28,0.55)",
         }}
       />
       <div
