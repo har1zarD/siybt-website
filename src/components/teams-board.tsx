@@ -28,7 +28,6 @@ export function TeamsBoard() {
       {/* counter */}
       <div className="grid gap-6 border-b border-[var(--color-line-strong)] pb-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-7">
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("confirmed")}</div>
           <div className="mt-3 flex items-baseline gap-3">
             <span className="font-mono text-7xl tabular-nums leading-none">
               <NumberTicker value={TEAMS.length} />

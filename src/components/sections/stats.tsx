@@ -18,7 +18,6 @@ export function Stats() {
         {items.map(({ k, n }, i) => (
           <Reveal key={k} delay={i * 0.06}>
             <div className="px-6 py-10 md:py-14">
-              <div className="text-eyebrow text-[var(--color-accent)]">0{i + 1}</div>
               <div className="mt-6 font-mono text-6xl md:text-7xl tabular-nums tracking-tight leading-none">
                 <NumberTicker value={n} />
               </div>

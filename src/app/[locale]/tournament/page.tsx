@@ -39,8 +39,8 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
       <section className="border-y border-[var(--color-line)] bg-[var(--color-paper)] py-20">
         <div className="container-edge mx-auto grid gap-10 md:grid-cols-12 md:items-end">
           <div className="md:col-span-5">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("countdownLabel")}</div>
-            <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("dates")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("countdownLabel")}</div>
+            <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("dates")}</h2>
           </div>
           <div className="md:col-span-7">
             <Countdown tone="ink" />
@@ -52,8 +52,8 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
       <section className="container-edge mx-auto py-24 md:py-32">
         <div className="grid gap-10 md:grid-cols-12 md:items-end">
           <div className="md:col-span-7">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("categoriesEyebrow")}</div>
-            <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("categoriesTitle")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("categoriesEyebrow")}</div>
+            <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("categoriesTitle")}</h2>
           </div>
           <p className="md:col-span-5 text-[var(--color-ink)]/65 leading-relaxed">{t("categoriesLead")}</p>
         </div>
@@ -76,8 +76,8 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
       <section className="bg-[var(--color-ink)] text-[var(--color-snow)] py-24 md:py-32 grain">
         <div className="container-edge mx-auto grid gap-12 md:grid-cols-12">
           <div className="md:col-span-6">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("fees")}</div>
-            <h3 className="mt-4 text-big">{t("feesTitle")}</h3>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("fees")}</div>
+            <h3 className="mt-2 text-big">{t("feesTitle")}</h3>
             <ul className="mt-8 divide-y divide-white/10 border-y border-white/10">
               <li className="flex items-baseline justify-between py-5">
                 <span className="text-base">{t("feesMen")}</span>
@@ -94,8 +94,8 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
             </ul>
           </div>
           <div className="md:col-span-6">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("format")}</div>
-            <h3 className="mt-4 text-big">{t("formatTitle")}</h3>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("format")}</div>
+            <h3 className="mt-2 text-big">{t("formatTitle")}</h3>
             <p className="mt-6 text-[var(--color-snow)]/75 leading-relaxed">{t("formatBody")}</p>
             <div className="mt-8 grid grid-cols-2 gap-3">
               {(["thu", "fri", "sat", "sun"] as const).map((d) => (
@@ -113,12 +113,11 @@ export default async function TournamentPage({ params }: { params: Promise<{ loc
       <section className="container-edge mx-auto py-24 md:py-32">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("rules")}</div>
-            <h3 className="mt-4 text-big text-[var(--color-ink)]">{t("rulesTitle")}</h3>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("rules")}</div>
+            <h3 className="mt-2 text-big text-[var(--color-ink)]">{t("rulesTitle")}</h3>
             <p className="mt-6 text-[var(--color-ink)]/65 leading-relaxed">{t("rulesBody")}</p>
           </div>
           <div className="md:col-span-7">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("faq.eyebrow")}</div>
             <ul className="mt-6 divide-y divide-[var(--color-line-strong)] border-y border-[var(--color-line-strong)]">
               {faqs.map((f, i) => (
                 <li key={i} className="py-6">

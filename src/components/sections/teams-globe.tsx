@@ -89,10 +89,8 @@ export function TeamsGlobe() {
     <section className="relative overflow-hidden bg-[var(--color-ink)] text-[var(--color-snow)] py-32 md:py-40 grain">
       <div className="container-edge mx-auto grid gap-16 md:grid-cols-12">
         <div className="md:col-span-5">
-          <Reveal>
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
-          </Reveal>
-          <h2 className="mt-6 text-giant text-[var(--color-snow)]">{t("title")}</h2>
+          <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("eyebrow")}</div>
+          <h2 className="mt-2 text-giant text-[var(--color-snow)]">{t("title")}</h2>
           <p className="mt-6 max-w-md text-[var(--color-snow)]/70 text-lg">{t("subtitle")}</p>
         </div>
 

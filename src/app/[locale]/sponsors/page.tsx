@@ -40,8 +40,8 @@ export default async function SponsorsPage({ params }: { params: Promise<{ local
           <Reveal key={k}>
             <article className="grid gap-8 border-t border-[var(--color-line-strong)] pt-10 md:grid-cols-12">
               <div className="md:col-span-4">
-                <div className="text-eyebrow text-[var(--color-accent)]">{t(`tiers.${k}`)}</div>
-                <h3 className="mt-3 text-big text-[var(--color-ink)]">{t(`tierTitles.${k}`)}</h3>
+                <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t(`tiers.${k}`)}</div>
+                <h3 className="mt-2 text-big text-[var(--color-ink)]">{t(`tierTitles.${k}`)}</h3>
                 <div className="mt-6 font-mono text-3xl tabular-nums">{price} <span className="text-base text-[var(--color-ink)]/55">/ {t("perEdition")}</span></div>
               </div>
               <div className="md:col-span-5 text-[var(--color-ink)]/70 leading-relaxed">{t(`tierBodies.${k}`)}</div>
@@ -64,8 +64,8 @@ export default async function SponsorsPage({ params }: { params: Promise<{ local
         <div className="container-edge mx-auto">
           <div className="grid gap-10 md:grid-cols-12">
             <div className="md:col-span-5">
-              <div className="text-eyebrow text-[var(--color-accent)]">{t("whyEyebrow")}</div>
-              <h2 className="mt-4 text-giant">{t("whyTitle")}</h2>
+              <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("whyEyebrow")}</div>
+              <h2 className="mt-2 text-giant">{t("whyTitle")}</h2>
             </div>
             <p className="md:col-span-7 md:pl-8 text-lg text-[var(--color-snow)]/75 leading-relaxed">{t("whyBody")}</p>
           </div>
@@ -83,8 +83,8 @@ export default async function SponsorsPage({ params }: { params: Promise<{ local
 
       <section className="container-edge mx-auto py-24 md:py-32 grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-7">
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("ctaEyebrow")}</div>
-          <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("ctaTitle")}</h2>
+          <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("ctaEyebrow")}</div>
+          <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("ctaTitle")}</h2>
         </div>
         <div className="md:col-span-5 flex flex-wrap gap-3">
           <a href="/sponsor-deck.pdf" className="inline-flex items-center gap-2 rounded-[var(--radius-sm)] border border-[var(--color-ink)] px-5 py-3 text-[11px] uppercase tracking-[0.2em] hover:bg-[var(--color-ink)] hover:text-[var(--color-snow)] transition-colors">

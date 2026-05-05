@@ -607,7 +607,6 @@ function SuccessScreen({ data }: { data: FormData }) {
         </motion.div>
 
         <div className="mt-8 text-center">
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("successEyebrow")}</div>
           <h2 className="mt-3 font-display text-4xl md:text-5xl leading-[1.05] tracking-[-0.01em] text-[var(--color-ink)]">
             {t("successTitle")}
           </h2>

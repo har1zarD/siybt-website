@@ -23,10 +23,8 @@ export function Gallery() {
       <div className="container-edge mx-auto">
         <div className="grid gap-10 md:grid-cols-12 md:items-end">
           <div className="md:col-span-7">
-            <Reveal>
-              <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
-            </Reveal>
-            <h2 className="mt-6 text-giant text-[var(--color-ink)]">{t("title")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("eyebrow")}</div>
+            <h2 className="mt-2 text-giant text-[var(--color-ink)]">{t("title")}</h2>
           </div>
           <p className="md:col-span-5 text-[var(--color-ink)]/65 text-lg leading-relaxed">{t("subtitle")}</p>
         </div>

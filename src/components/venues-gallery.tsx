@@ -88,7 +88,6 @@ function VenueRow({ index, venue, photos }: { index: number; venue: Venue; photo
       </div>
 
       <div className="md:col-span-5 md:pl-6">
-        <div className="text-eyebrow text-[var(--color-accent)]">VENUE 0{index + 1}</div>
         {venue.primary ? (
           <span className="ml-2 inline-block rounded-[2px] bg-[var(--color-accent)] px-2 py-0.5 text-[9px] uppercase tracking-[0.18em] text-[var(--color-snow)] align-middle">{t("primary")}</span>
         ) : null}

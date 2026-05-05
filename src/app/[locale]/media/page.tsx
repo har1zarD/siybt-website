@@ -41,10 +41,7 @@ export default async function MediaPage({ params }: { params: Promise<{ locale: 
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)] via-[var(--color-ink)]/40 to-transparent" />
           <div className="absolute inset-0 grid place-items-center text-center">
             <div>
-              <div className="inline-flex items-center gap-2 text-eyebrow text-[var(--color-accent)]">
-                <span className="h-2 w-2 rounded-full bg-[var(--color-accent)] animate-pulse-dot" /> {t("stream")}
-              </div>
-              <h2 className="mt-4 text-giant">{t("streamTitle")}</h2>
+              <h2 className="text-giant">{t("streamTitle")}</h2>
               <p className="mt-4 text-sm text-[var(--color-snow)]/75">{t("soon")}</p>
             </div>
           </div>
@@ -62,7 +59,6 @@ export default async function MediaPage({ params }: { params: Promise<{ locale: 
               <Image src={GALLERY[i]} alt={t(`reel.${i}.title`)} fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/80 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-[var(--color-snow)]">
-                <div className="text-eyebrow text-[var(--color-accent)]">{t(`reel.${i}.duration`)}</div>
                 <div className="mt-2 font-display text-2xl">{t(`reel.${i}.title`)}</div>
               </div>
               <Play className="absolute right-4 top-4 h-5 w-5 text-[var(--color-snow)]" />
@@ -75,8 +71,8 @@ export default async function MediaPage({ params }: { params: Promise<{ locale: 
       <section className="container-edge mx-auto pb-24">
         <div className="mb-10 grid gap-6 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("galleryEyebrow")}</div>
-            <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("galleryTitle")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("galleryEyebrow")}</div>
+            <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("galleryTitle")}</h2>
           </div>
         </div>
         <div className="columns-2 gap-3 md:columns-3 lg:columns-4 [column-fill:balance]">
@@ -94,8 +90,8 @@ export default async function MediaPage({ params }: { params: Promise<{ locale: 
       <section className="bg-[var(--color-paper-warm)] py-24 md:py-32">
         <div className="container-edge mx-auto grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("press.eyebrow")}</div>
-            <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("press.title")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("press.eyebrow")}</div>
+            <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("press.title")}</h2>
             <p className="mt-4 text-[var(--color-ink)]/65 leading-relaxed">{t("press.body")}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="/press-kit.zip" className="inline-flex items-center gap-2 rounded-[var(--radius-sm)] border border-[var(--color-ink)] px-5 py-3 text-[11px] uppercase tracking-[0.2em] hover:bg-[var(--color-ink)] hover:text-[var(--color-snow)] transition-colors">
@@ -108,7 +104,7 @@ export default async function MediaPage({ params }: { params: Promise<{ locale: 
           </div>
 
           <form className="md:col-span-7 grid gap-3 rounded-[var(--radius-md)] border border-[var(--color-line-strong)] bg-[var(--color-snow)] p-8 md:grid-cols-2">
-            <div className="md:col-span-2 text-eyebrow text-[var(--color-accent)]">{t("accreditation.eyebrow")}</div>
+            <div className="md:col-span-2 text-eyebrow-soft text-[var(--color-accent)]/70">{t("accreditation.eyebrow")}</div>
             <h3 className="md:col-span-2 text-big text-[var(--color-ink)]">{t("accreditation.title")}</h3>
             {(["fullName", "outlet", "email", "phone"] as const).map((k) => (
               <label key={k}>

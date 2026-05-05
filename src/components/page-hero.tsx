@@ -113,7 +113,6 @@ export function PageHero({
             className="md:col-span-4"
           >
             <p className="text-base md:text-lg leading-relaxed text-[var(--color-snow)]/80 max-w-md">{lead}</p>
-            {meta ? <div className="mt-5 text-eyebrow text-[var(--color-accent)]">{meta}</div> : null}
           </motion.div>
         </div>
       </motion.div>

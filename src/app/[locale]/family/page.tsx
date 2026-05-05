@@ -48,8 +48,8 @@ export default async function FamilyPage({ params }: { params: Promise<{ locale:
       {/* what's included */}
       <section className="container-edge mx-auto py-24 md:py-32 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("includes")}</div>
-          <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("includesTitle")}</h2>
+          <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("includes")}</div>
+          <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("includesTitle")}</h2>
           <p className="mt-6 text-[var(--color-ink)]/65 leading-relaxed">{t("includesBody")}</p>
         </div>
         <ul className="md:col-span-7 divide-y divide-[var(--color-line-strong)] border-y border-[var(--color-line-strong)]">
@@ -73,7 +73,6 @@ export default async function FamilyPage({ params }: { params: Promise<{ locale:
             { k: "pool", price: "", showPrice: false },
           ] as const).map(({ k, price, showPrice }) => (
             <article key={k} className="rounded-[var(--radius-md)] border border-[var(--color-line-strong)] bg-[var(--color-snow)] p-8">
-              <div className="text-eyebrow text-[var(--color-accent)]">{t(`rooms.${k}.tag`)}</div>
               <h3 className="mt-4 font-display text-3xl">{t(`rooms.${k}.title`)}</h3>
               <p className="mt-3 text-sm text-[var(--color-ink)]/65 leading-relaxed">{t(`rooms.${k}.body`)}</p>
               {showPrice && (
@@ -87,8 +86,8 @@ export default async function FamilyPage({ params }: { params: Promise<{ locale:
       {/* booking form */}
       <section className="container-edge mx-auto py-24 md:py-32 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("book.eyebrow")}</div>
-          <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("book.title")}</h2>
+          <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("book.eyebrow")}</div>
+          <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("book.title")}</h2>
           <p className="mt-6 text-[var(--color-ink)]/65 leading-relaxed">{t("book.body")}</p>
           <div className="mt-10 inline-flex items-center gap-3">
             <Magnetic>

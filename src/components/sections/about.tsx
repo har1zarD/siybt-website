@@ -32,10 +32,8 @@ export function About() {
 
       <div className="container-edge relative mx-auto grid gap-16 md:grid-cols-12">
         <div className="md:col-span-6">
-          <Reveal>
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
-          </Reveal>
-          <h2 className="mt-6 text-giant text-[var(--color-ink)]">
+          <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("eyebrow")}</div>
+          <h2 className="mt-2 text-giant text-[var(--color-ink)]">
             <SplitWord text={t("title").replace("\n", " ")} />
           </h2>
         </div>

@@ -27,8 +27,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
 
       <section className="container-edge mx-auto py-16 md:py-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("channelsEyebrow")}</div>
-          <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("channelsTitle")}</h2>
+          <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("channelsEyebrow")}</div>
+          <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("channelsTitle")}</h2>
           <ul className="mt-10 divide-y divide-[var(--color-line-strong)] border-y border-[var(--color-line-strong)]">
             {channels.map(({ k, email }) => (
               <li key={k} className="py-5">

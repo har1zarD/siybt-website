@@ -55,10 +55,8 @@ export function Categories() {
   return (
     <section ref={sectionRef} className="relative bg-[var(--color-ink)] text-[var(--color-snow)] overflow-hidden">
       <div className="container-edge mx-auto pt-24">
-        <Reveal>
-          <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
-        </Reveal>
-        <h2 className="mt-6 text-giant whitespace-pre-line">{t("title")}</h2>
+        <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("eyebrow")}</div>
+        <h2 className="mt-2 text-giant whitespace-pre-line">{t("title")}</h2>
         <div className="mt-6 text-eyebrow text-[var(--color-snow)]/55 md:hidden">{t("drag")} →</div>
         <div className="mt-6 text-eyebrow text-[var(--color-snow)]/55 hidden md:block">- {t("drag")}</div>
       </div>

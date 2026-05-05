@@ -23,7 +23,6 @@ export default async function VenuesPage({ params }: { params: Promise<{ locale:
       <section className="bg-[var(--color-paper-warm)] py-16 md:py-20">
         <div className="container-edge mx-auto flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="max-w-xl">
-            <div className="text-eyebrow text-[var(--color-accent)]">{nav("stay")}</div>
             <h3 className="mt-3 font-display text-3xl md:text-4xl text-[var(--color-ink)]">{t("stayTeaserTitle")}</h3>
             <p className="mt-3 text-[var(--color-ink)]/70">{t("stayTeaserBody")}</p>
           </div>
@@ -38,8 +37,8 @@ export default async function VenuesPage({ params }: { params: Promise<{ locale:
       <section className="container-edge mx-auto pb-24 md:pb-32 pt-16 md:pt-24">
         <div className="mb-6 flex items-end justify-between gap-6">
           <div>
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("openDirections")}</div>
-            <h2 className="mt-3 text-big text-[var(--color-ink)]">{t("title")} · {t("directions")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("openDirections")}</div>
+            <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("title")} · {t("directions")}</h2>
           </div>
         </div>
         <VenuesMap />

@@ -14,8 +14,8 @@ export function HotelsSection() {
       <div className="container-edge mx-auto">
         <div className="grid gap-10 md:grid-cols-12 mb-14">
           <div className="md:col-span-5">
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
-            <h2 className="mt-4 text-big text-[var(--color-ink)]">{t("title")}</h2>
+            <div className="text-eyebrow-soft text-[var(--color-accent)]/70">{t("eyebrow")}</div>
+            <h2 className="mt-2 text-big text-[var(--color-ink)]">{t("title")}</h2>
           </div>
           <p className="md:col-span-7 md:pt-3 text-[var(--color-ink)]/70 leading-relaxed text-lg">
             {t("lead")}
