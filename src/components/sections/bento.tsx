@@ -37,13 +37,11 @@ export function Bento() {
   const t = useTranslations("bento");
   return (
     <section className="container-edge relative mx-auto py-32 md:py-40">
-      <div className="grid gap-12 md:grid-cols-12">
-        <div className="md:col-span-4">
-          <Reveal>
-            <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
-          </Reveal>
-          <h2 className="mt-6 text-giant text-[var(--color-ink)]">{t("title")}</h2>
-        </div>
+      <div>
+        <Reveal>
+          <div className="text-eyebrow text-[var(--color-accent)]">{t("eyebrow")}</div>
+        </Reveal>
+        <h2 className="mt-6 text-giant text-[var(--color-ink)]">{t("title")}</h2>
       </div>
 
       <RevealStagger className="mt-16 grid auto-rows-[180px] grid-cols-1 gap-3 md:grid-cols-12 md:auto-rows-[160px]">

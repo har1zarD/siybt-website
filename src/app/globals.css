@@ -79,9 +79,9 @@
 }
 
 @layer utilities {
-  .text-mega { font-size: clamp(56px, 11.5vw, 220px); line-height: 1; letter-spacing: -0.012em; padding-bottom: 0.06em; word-break: break-word; }
-  .text-giant { font-size: clamp(40px, 8vw, 144px); line-height: 1; letter-spacing: -0.01em; padding-bottom: 0.06em; word-break: break-word; }
-  .text-big { font-size: clamp(32px, 5.5vw, 92px); line-height: 1.04; letter-spacing: -0.008em; padding-bottom: 0.04em; word-break: break-word; }
+  .text-mega { font-size: clamp(48px, 11.5vw, 220px); line-height: 1; letter-spacing: -0.012em; padding-bottom: 0.06em; overflow-wrap: break-word; hyphens: none; }
+  .text-giant { font-size: clamp(34px, 8vw, 144px); line-height: 1; letter-spacing: -0.01em; padding-bottom: 0.06em; overflow-wrap: break-word; hyphens: none; }
+  .text-big { font-size: clamp(28px, 5.5vw, 92px); line-height: 1.04; letter-spacing: -0.008em; padding-bottom: 0.04em; overflow-wrap: break-word; hyphens: none; }
   .text-mega > .block + .block,
   .text-giant > .block + .block,
   .text-big > .block + .block { margin-top: 0.06em; }
